@@ -50,7 +50,7 @@ const HeroSlider = () => {
           </div>
 
           {/* Text overlay */}
-          <div className="absolute top-0 right-0 bg-gradient-to-l from-white/90 to-transparent p-6 md:p-8 w-2/3 md:w-1/2 h-full flex flex-col justify-center">
+          <div className="absolute top-0 right-0 bg-gradient-to-l from-white/90 to-transparent p-6 md:p-8 w-2/3 md:w-1/2 h-full flex flex-col justify-center bg-">
             <h2 className="text-2xl md:text-4xl font-semibold text-gray-800">
               {slides[currentIndex].title}
             </h2>
@@ -59,6 +59,7 @@ const HeroSlider = () => {
             </button>
           </div>
         </div>
+        
       </div>
 
       {/* Dots */}

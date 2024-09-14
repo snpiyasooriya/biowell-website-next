@@ -1,23 +1,23 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import her1 from '../public/hero1.jpg'; // Correct image import
+import doctordetails from '../public/doctordetails.png'; // Correct image import
 
 const Drdetails = () => {
   // Array containing images 
   const slides = [
     {
-      image: her1,
+      image: doctordetails,
       title: 'Dr. Emill Johnson',
       description: 'MD, Independent Physician and Medical Consultant',
     },
     {
-      image: her1, 
+      image: doctordetails, 
       title: 'Dr. Sarah Bennett',
       description: 'Cardiologist, Specialist in Heart Care and Wellness',
     },
     {
-      image: her1, 
+      image: doctordetails, 
       title: 'Dr. Michael Adams',
       description: 'MD, Neurologist and Research Scientist',
     },
@@ -27,7 +27,7 @@ const Drdetails = () => {
 
   // Automatically switch images every 5 seconds
   useEffect(() => {
-    const interval = setInterval(() => {
+    const interval = setInterval(() => {z
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000); // Change image every 5 seconds
 
@@ -38,14 +38,14 @@ const Drdetails = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto flex justify-center items-center relative">
         {/* Slider Section */}
-        <div className="flex flex-col items-center text-center bg-blue-100 p-6 rounded-lg shadow-lg w-full max-w-[1196px] h-auto">
+        <div className="flex flex-col items-center text-center p-6  w-full max-w-[1440px] h-auto">
           {/* Image Container */}
           <div className="w-[1196px] h-[460px] overflow-hidden">
             <Image
               src={slides[currentIndex].image}
               alt={slides[currentIndex].title}
-              width={1196}  // Set the exact width
-              height={460}  // Set the exact height
+              width={1440}  // Set the exact width
+              height={500}  // Set the exact height
               className="object-cover rounded-lg shadow-md transition-opacity duration-1000 ease-in-out"
             />
           </div>

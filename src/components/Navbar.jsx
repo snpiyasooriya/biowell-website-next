@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { FcBusinessContact } from 'react-icons/fc';
 import { FiMenu, FiX } from 'react-icons/fi'; 
+import Image from 'next/image';
+import whtspplogo from '../public/whatspplogo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 p-4">
+    <nav className="bg-blue-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="text-white font-bold text-2xl">
@@ -51,10 +53,10 @@ const Navbar = () => {
 
         {/* Contact Us with Icon */}
         <li className="hidden md:flex items-center text-white">
-          <FcBusinessContact className="mr-2" size={24} />
-          <a href="#contact" className="hover:text-blue-200">
-            Contact Us
-          </a>
+        <Image src={whtspplogo} alt="Logo" className="mr-2" size={24} />
+              <a href="#contact" className="hover:text-blue-200">
+                Contact Us
+              </a>
         </li>
       </div>
 
@@ -82,12 +84,12 @@ const Navbar = () => {
                 About
               </a>
             </li>
-            <li className="flex justify-center items-center">
-              <FcBusinessContact className="mr-2" size={24} />
+             <li className="flex justify-center items-center">
+              <Image src={whtspplogo} alt="Logo" className="mr-2" size={24} />
               <a href="#contact" className="hover:text-blue-200">
                 Contact Us
               </a>
-            </li>
+            </li> 
           </ul>
         </div>
       )}

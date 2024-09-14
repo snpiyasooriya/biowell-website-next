@@ -1,14 +1,16 @@
 // components/PharmaSection.js
 import React from 'react';
+import Image from 'next/image';
+import bootomimg from '../public/Bottom.jpg';
 
 const PharmaSection = () => {
   return (
-    <div className="relative w-full max-w-[1196px] h-[530px] mx-auto mb-16"> {/* Use w-full and max-w for responsiveness */}
+    <div className="relative w-full max-w-[1196px] h-[530px] mx-auto mb-16"> 
       {/* Background image */}
-      <img
-        src="/" 
+      <Image
+        src={bootomimg}
         alt="Pharmaceutical background"
-        className="absolute inset-0 w-full h-full object-cover opacity-70"
+        className="absolute inset-0 w-full h-full "
       />
 
       {/* Overlay to darken the background image */}
@@ -27,7 +29,7 @@ const PharmaSection = () => {
           </p>
           <a
             href="#"
-            className="bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-600 transition duration-300 ease-in-out"
+            className="bg-green-500 text-white py-2 px-6 rounded-md hover:bg-green-500 transition duration-300 ease-in-out"
           >
             Get a quote
           </a>
