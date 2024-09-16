@@ -26,7 +26,7 @@ const KeyServices = () => {
           {/* Service 2 */}
           <div className="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col items-center h-[360px] w-[284px] mx-auto">
             <Image src={trading} className="text-5xl text-blue-600 mb-4" />
-            <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 text-center">Trading Services</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 text-center">Trading  <br />Services</h3>
             <p className="text-gray-700 text-center">
               We provide comprehensive trading services, ensuring the delivery of high-quality products globally. We maintain excellence across all levels of service to meet client needs.
             </p>

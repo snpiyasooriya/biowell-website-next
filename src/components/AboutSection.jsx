@@ -8,7 +8,7 @@ const AboutSection = () => {
     <section className="relative h-[500px] w-full gap-16 mt-16 bg-blue-50">
       {/* Background Image */}
             <div className="absolute inset-0">
-        <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+        <div className="relative w-full h-[300px] sm:h-[400px] md:h-[400px] lg:h-[500px]">
           <Image
             src={group}
             alt="Background Image"
