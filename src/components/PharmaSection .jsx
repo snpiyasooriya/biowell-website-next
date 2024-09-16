@@ -5,7 +5,7 @@ import bootomimg from '../public/Bottom.jpg';
 
 const PharmaSection = () => {
   return (
-    <div className="relative w-full max-w-[1196px] h-[530px] mx-auto mb-8 mt-2 rounded-lg"> 
+    <div className="relative w-full max-w-[1196px] h-[530px] mx-auto mb-16 mt-4 rounded-lg"> 
       {/* Background image */}
       <Image
         src={bootomimg}
