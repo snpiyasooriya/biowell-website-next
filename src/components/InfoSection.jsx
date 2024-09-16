@@ -2,12 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import dna from '../public/dna.png';
 import pill from '../public/pill.png';
+
 const InfoSection = () => {
   return (
-    <div className="max-w-[1196px] w-full h-auto mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-10 mb-16"> 
-      
+    <div className="max-w-[1196px] w-full h-auto mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10 mb-16 mt-4"> 
       {/* First Box */}
-      <div className="bg-blue-100 w-full h-full p-6 rounded-lg shadow-lg flex flex-col justify-between">
+      <div className="bg-blue-100 w-full h-full p-6 rounded-lg  flex flex-col justify-between">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900">Welcome</h2>
           <h3 className="text-xl md:text-2xl text-blue-600 mt-2">to Biowell Pharmaceuticals</h3>
@@ -20,13 +20,13 @@ const InfoSection = () => {
           <Image
             src={dna}
             alt="DNA Graphic"
-            className="w-[300px] md:w-[423px] h-auto"
+            className="w-[300px] md:w-[423px] h-auto opacity-75"
           />
         </div>
       </div>
 
       {/* Second Box */}
-      <div className="bg-blue-100 w-full h-full p-6 rounded-lg shadow-lg flex flex-col justify-between">
+      <div className="bg-blue-100 w-full h-full p-6 rounded-lg  flex flex-col justify-between">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900">Our Mission</h2>
           <p className="text-gray-700 mt-4">
@@ -38,7 +38,7 @@ const InfoSection = () => {
           <Image
             src={pill}
             alt="Pills Graphic"
-            className="w-[200px] md:w-[309px] h-auto"
+            className="w-[200px] md:w-[309px] h-auto opacity-80"
           />
         </div>
       </div>

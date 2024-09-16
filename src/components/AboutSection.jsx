@@ -4,9 +4,10 @@ import group from '../public/Group.svg'
 
 const AboutSection = () => {
   return (
-    <section className="relative h-[500px] max-w-full gap-16 mt-16 bg-blue-50">
+    <section className="relative h-[500px] w-full gap-16 mt-16 bg-blue-50">
       {/* Background Image */}
-      <div className="absolute inset-0">
+      <div className='absolute inset-0'>
+      <div className=" h-[500] w-[1440] md">
         <Image
           src={group}
           alt="Background Image"
@@ -15,6 +16,7 @@ const AboutSection = () => {
           objectPosition="center"
           className="z-0"
         />
+      </div>
       </div>
 
       {/* Overlaying Content */}
@@ -32,7 +34,7 @@ const AboutSection = () => {
         {/* Learn Button */}
         <a
           href="#"
-          className="bg-blue-800 text-black text-sm sm:text-lg px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-blue-200 transition duration-300"
+          className="bg-blue-600 text-black text-sm sm:text-lg px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-blue-200 transition duration-300"
         >
           Learn More
         </a>

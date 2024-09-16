@@ -27,7 +27,7 @@ const Drdetails = () => {
 
   // Automatically switch images every 5 seconds
   useEffect(() => {
-    const interval = setInterval(() => {z
+    const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000); // Change image every 5 seconds
 
@@ -35,27 +35,28 @@ const Drdetails = () => {
   }, [slides.length]);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16">
       <div className="container mx-auto flex justify-center items-center relative">
         {/* Slider Section */}
-        <div className="flex flex-col items-center text-center p-6  w-full max-w-[1440px] h-auto">
+        <div className="flex flex-col items-center text-center p-6 w-full max-w-[1440px] h-auto">
           {/* Image Container */}
-          <div className="w-[1196px] h-[460px] overflow-hidden">
+          <div className="w-full h-auto overflow-hidden bg-blue-200">
             <Image
               src={slides[currentIndex].image}
               alt={slides[currentIndex].title}
-              width={1440}  // Set the exact width
-              height={500}  // Set the exact height
+              layout="responsive"  // Ensure image is responsive
+              width={1440}  // Set image's natural width
+              height={500}  // Set image's natural height
               className="object-cover rounded-lg shadow-md transition-opacity duration-1000 ease-in-out"
             />
           </div>
 
           {/* Text Content */}
           <div className="mt-4">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-800">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-800">
               {slides[currentIndex].title}
             </h3>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-2">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mt-2">
               {slides[currentIndex].description}
             </p>
           </div>

@@ -5,16 +5,16 @@ import bootomimg from '../public/Bottom.jpg';
 
 const PharmaSection = () => {
   return (
-    <div className="relative w-full max-w-[1196px] h-[530px] mx-auto mb-16"> 
+    <div className="relative w-full max-w-[1196px] h-[530px] mx-auto mb-8 mt-2 rounded-lg"> 
       {/* Background image */}
       <Image
         src={bootomimg}
         alt="Pharmaceutical background"
-        className="absolute inset-0 w-full h-full "
+        className="absolute inset-0 w-full h-full rounded-[10px]"
       />
 
       {/* Overlay to darken the background image */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 "></div>
 
       {/* Overlay content */}
       <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 lg:px-8">

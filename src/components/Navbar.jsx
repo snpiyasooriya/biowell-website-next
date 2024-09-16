@@ -4,6 +4,7 @@ import { FcBusinessContact } from 'react-icons/fc';
 import { FiMenu, FiX } from 'react-icons/fi'; 
 import Image from 'next/image';
 import whtspplogo from '../public/whatspplogo.svg';
+import logo from '../public/logo1.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-800 p-4">
+    <nav className="bg-blue-800 p-4 h-[100px]">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="text-white font-bold text-2xl">
-          LOGO
+          <Image  src={logo} alt="Logo" width={150} height={100}  />
         </div>
 
         {/*  Menu Icon for Mobile */}
@@ -28,7 +29,7 @@ const Navbar = () => {
         </div>
 
         {/* Nav Links for larger screens (Hidden on mobile) */}
-        <ul className="hidden md:flex space-x-8 text-white">
+        <ul className="hidden md:flex space-x-8 text-white text-[20px]">
           <li>
             <a href="#science" className="hover:text-blue-200">
               Science
@@ -54,7 +55,7 @@ const Navbar = () => {
         {/* Contact Us with Icon */}
         <li className="hidden md:flex items-center text-white">
         <Image src={whtspplogo} alt="Logo" className="mr-2" size={24} />
-              <a href="#contact" className="hover:text-blue-200">
+              <a href="/contact" className="hover:text-blue-200 text-[20px]">
                 Contact Us
               </a>
         </li>
@@ -62,8 +63,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <ul className="space-y-4 text-white text-center bg-blue-700 py-4">
+        <div className="md:hidden text-[15px]">
+          <ul className="space-y-4 text-white text-center bg-blue-700 py-4 ">
             <li>
               <a href="#science" className="block hover:text-blue-200">
                 Science
@@ -86,7 +87,7 @@ const Navbar = () => {
             </li>
              <li className="flex justify-center items-center">
               <Image src={whtspplogo} alt="Logo" className="mr-2" size={24} />
-              <a href="#contact" className="hover:text-blue-200">
+              <a href="/contact" className="hover:text-blue-200">
                 Contact Us
               </a>
             </li> 
