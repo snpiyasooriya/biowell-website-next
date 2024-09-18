@@ -37,7 +37,7 @@ const AboutSection = () => {
         {/* Learn Button */}
         <a
           href="#"
-          className="bg-blue-600 text-black text-sm sm:text-lg px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-blue-200 transition duration-300"
+          className="bg-navcolor text-white font-bold text-sm sm:text-lg px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-blue-200 transition duration-300"
         >
           Learn More
         </a>

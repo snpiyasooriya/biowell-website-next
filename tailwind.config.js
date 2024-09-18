@@ -10,6 +10,12 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customBlue: "#B6DFFF", 
+        navcolor: "#050B7F",
+        fottercolor: "#0070C7",
+        keyservice: "#2B4F85",
+        keyserviceletters: "#808080",
+        button1: "#2DC283",
       },
     },
   },

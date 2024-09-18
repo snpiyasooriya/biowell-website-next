@@ -7,7 +7,7 @@ const InfoSection = () => {
   return (
     <div className="max-w-[1196px] w-full h-auto mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10 mb-16 mt-4"> 
       {/* First Box */}
-      <div className="bg-blue-100 w-full h-full p-6 rounded-lg  flex flex-col justify-between">
+      <div className="bg-customBlue w-full h-full p-6 rounded-lg  flex flex-col justify-between">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900">Welcome</h2>
           <h3 className="text-xl md:text-2xl text-blue-600 mt-2">to Biowell Pharmaceuticals</h3>
@@ -26,7 +26,7 @@ const InfoSection = () => {
       </div>
 
       {/* Second Box */}
-      <div className="bg-blue-100 w-full h-full p-6 rounded-lg  flex flex-col justify-between">
+      <div className="bg-customBlue w-full h-full p-6 rounded-lg  flex flex-col justify-between">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900">Our Mission</h2>
           <p className="text-gray-700 mt-4">

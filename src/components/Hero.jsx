@@ -1,16 +1,15 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import her1 from '../public/img/heronew.png'; // Correct image import
+import her1 from '../public/img/heronew.png'; 
 
 const HeroSlider = () => {
-  // Images and text for each slide
   const slides = [
     {
       image: her1,
       title: {
         t1: "Translating",
-        t2: "groundbreaking science ",
+        t2: "groundbreaking science",
         t3: "to life science"
       },
       buttonText: 'Learn More',
@@ -19,7 +18,7 @@ const HeroSlider = () => {
       image: her1, 
       title: {
         t1: "Translating",
-        t2: "groundbreaking science ",
+        t2: "groundbreaking science",
         t3: "to life science"
       },
       buttonText: 'Learn More',
@@ -28,7 +27,7 @@ const HeroSlider = () => {
       image: her1,
       title: {
         t1: "Translating",
-        t2: "groundbreaking science ",
+        t2: "groundbreaking science",
         t3: "to life science"
       },
       buttonText: 'Learn More',
@@ -46,20 +45,19 @@ const HeroSlider = () => {
   }, [slides.length]);
 
   return (
-    <section className="bg-blue-200 relative">
+    <section className="relative z-10 bg-customBlue">
       <div className="container mx-auto flex justify-center items-center relative">
-        {/* Slider Section */}
-        <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[460px] overflow-hidden rounded-lg leading-10 bg-blue-200">
+        <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[460px] overflow-hidden rounded-lg bg-blue-200">
           <div className="w-full h-full relative">
             <Image
               src={slides[currentIndex].image}
               alt={slides[currentIndex].title.t1}
               layout="fill"
               objectFit="cover"
-              className="rounded-lg  duration-1000 ease-in-out"
+              className="rounded-lg duration-1000 ease-in-out"
             />
             {/* Dots */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
               {slides.map((_, index) => (
                 <span
                   key={index}
@@ -73,15 +71,13 @@ const HeroSlider = () => {
           </div>
 
           {/* Text and Button overlay */}
-          <div className="absolute top-0 right-0 p-6 md:p-8 w-2/3 md:w-1/2 h-full flex flex-col justify-center items-end text-right">
-            {/* Text */}
-            <h2 className="text-2xl md:text-4xl font-semibold text-black ">
+          <div className="absolute top-0 right-0 p-6 md:p-8 w-2/3 md:w-1/2 h-full flex flex-col justify-center items-end text-right z-20">
+            <h2 className="text-2xl md:text-4xl font-semibold text-black">
               {slides[currentIndex].title.t1} <br />
-              {slides[currentIndex].title.t2}<br />
+              {slides[currentIndex].title.t2} <br />
               {slides[currentIndex].title.t3}
             </h2>
-            {/* Button aligned with text */}
-            <button className="mt-6 bg-blue-600 text-white py-2 px-4 md:px-6 rounded-lg w-[200px] h-[50px]  ">
+            <button className="mt-6 bg-navcolor text-white py-2 px-4 md:px-6 rounded-lg w-[200px] h-[50px] font-bold">
               {slides[currentIndex].buttonText}
             </button>
           </div>

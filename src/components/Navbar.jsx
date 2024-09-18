@@ -1,6 +1,5 @@
-'use client';
+"use client";
 import React, { useState } from 'react';
-import { FcBusinessContact } from 'react-icons/fc';
 import { FiMenu, FiX } from 'react-icons/fi'; 
 import Image from 'next/image';
 import whtspplogo from '../public/whatspplogo.svg';
@@ -14,83 +13,47 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-800 p-4 h-[100px]">
+    <nav className="bg-navcolor p-4 relative z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="text-white font-bold text-2xl">
-          <Image  src={logo} alt="Logo" width={150} height={100}  />
+          <Image src={logo} alt="Logo" width={150} height={100} />
         </div>
 
-        {/*  Menu Icon for Mobile */}
+        {/* Menu Icon for Mobile */}
         <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu} className="text-white">
+          <button onClick={toggleMenu} className="text-white focus:outline-none">
             {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
           </button>
         </div>
 
         {/* Nav Links for larger screens (Hidden on mobile) */}
         <ul className="hidden md:flex space-x-8 text-white text-[20px]">
-          <li>
-            <a href="#science" className="hover:text-blue-200">
-              Science
-            </a>
-          </li>
-          <li>
-            <a href="#products" className="hover:text-blue-200">
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#stories" className="hover:text-blue-200">
-              Stories
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-blue-200">
-              About
-            </a>
-          </li>
+          <li><a href="#science" className="hover:text-blue-300">Science</a></li>
+          <li><a href="#products" className="hover:text-blue-300">Products</a></li>
+          <li><a href="#stories" className="hover:text-blue-300">Stories</a></li>
+          <li><a href="#about" className="hover:text-blue-300">About</a></li>
         </ul>
 
         {/* Contact Us with Icon */}
-        <li className="hidden md:flex items-center text-white">
-        <Image src={whtspplogo} alt="Logo" className="mr-2" size={24} />
-              <a href="/contact" className="hover:text-blue-200 text-[20px]">
-                Contact Us
-              </a>
-        </li>
+        <div className="hidden md:flex items-center text-white">
+          <Image src={whtspplogo} alt="WhatsApp Logo" className="mr-2" width={24} height={24} />
+          <a href="/contact" className="hover:text-blue-300 text-[20px]">Contact Us</a>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden text-[15px]">
-          <ul className="space-y-4 text-white text-center bg-blue-700 py-4 ">
-            <li>
-              <a href="#science" className="block hover:text-blue-200">
-                Science
-              </a>
+        <div className="block md:hidden w-full bg-navcolor transition-all duration-300 ease-in-out z-50 ">
+          <ul className="flex flex-col items-center space-y-4 text-white text-center py-6">
+            <li><a href="#science" className="block text-lg hover:text-blue-300">Science</a></li>
+            <li><a href="#products" className="block text-lg hover:text-blue-300">Products</a></li>
+            <li><a href="#stories" className="block text-lg hover:text-blue-300">Stories</a></li>
+            <li><a href="#about" className="block text-lg hover:text-blue-300">About</a></li>
+            <li className="flex justify-center items-center">
+              <Image src={whtspplogo} alt="WhatsApp Logo" className="mr-2" width={24} height={24} />
+              <a href="/contact" className="hover:text-blue-300 text-lg py-2">Contact Us</a>
             </li>
-            <li>
-              <a href="#products" className="block hover:text-blue-200">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#stories" className="block hover:text-blue-200">
-                Stories
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="block hover:text-blue-200">
-                About
-              </a>
-            </li>
-             <li className="flex justify-center items-center">
-              <Image src={whtspplogo} alt="Logo" className="mr-2" size={24} />
-              <a href="/contact" className="hover:text-blue-200">
-                Contact Us
-              </a>
-            </li> 
           </ul>
         </div>
       )}
