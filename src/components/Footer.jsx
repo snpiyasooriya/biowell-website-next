@@ -4,7 +4,7 @@ import logofooter from '../public/logo.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-fottercolor text-white py-12 mt-16">
+    <footer className="bg-[#050B7F] text-white py-12 mt-16">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
         {/* Logo and Connection Section */}
         <div className="flex flex-col items-center md:items-start">

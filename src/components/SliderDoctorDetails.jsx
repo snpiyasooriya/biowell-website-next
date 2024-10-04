@@ -34,7 +34,7 @@ const Drdetails = () => {
 
   return (
     <section className="py-16 z-10 ">
-      <div className='w-full bg-blue-200'>
+      <div className='w-full bg-[#D0D4FF]'>
       <div className="container mx-auto flex justify-center items-center relative ">
         {/* Slider Section */}
         <div className="relative w-full max-w-full h-[500px] overflow-hidden ">
@@ -51,7 +51,7 @@ const Drdetails = () => {
           <div className="absolute inset-0 flex flex-col justify-between p-8">
             {/* Upper left text */}
             <div className="w-full md:w-2/3 text-left align-text-bottom text-blue-900">
-              <h2 className="text-3xl sm:text-xl md:text-3xl lg:text-3xl font-bold">
+              <h2 className="text-4xl sm:text-xl md:text-3xl lg:text-4xl font-bold">
                 High Standards and Reliable Results
               </h2>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-4 leading-relaxed text-black">

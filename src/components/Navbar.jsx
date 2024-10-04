@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-navcolor p-4 relative z-50">
+    <nav className="bg-[#050B7F] p-4 relative z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="text-white font-bold text-2xl">
@@ -44,7 +44,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="block md:hidden w-full bg-navcolor transition-all duration-300 ease-in-out z-50 ">
+        <div className="block md:hidden w-full bg-[#050B7F] transition-all duration-300 ease-in-out z-50 ">
           <ul className="flex flex-col items-center space-y-4 text-white text-center py-6">
             <li><a href="#science" className="block text-lg hover:text-blue-300">Science</a></li>
             <li><a href="#products" className="block text-lg hover:text-blue-300">Products</a></li>

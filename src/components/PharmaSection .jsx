@@ -19,10 +19,10 @@ const PharmaSection = () => {
       {/* Overlay content */}
       <div className="absolute inset-0 flex items-center justify-center z-10 px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white max-w-2xl">
-          <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-xl md:text-4xl lg:text-5xl font-bold mb-6">
             YOUR PARTNER IN  HEALTH AND INNOVATION
           </h1>
-          <p className="text-sm sm:text-base md:text-lg mb-8">
+          <p className="text-sm sm:text-lg md:text-lg mb-8">
             If you have any pharmaceutical needs or inquiries, please do not 
             hesitate to contact us. Our team is ready to assist you and 
             provide the best solutions for your business.

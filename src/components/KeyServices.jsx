@@ -15,7 +15,7 @@ const KeyServices = () => {
         {/* Grid layout with 25px gap between boxes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[25px]">
           {/* Service 1 */}
-          <div className="bg-customBlue p-6 rounded-lg shadow-md flex flex-col items-center h-[360px] w-[284px] mx-auto">
+          <div className="bg-[#D0D4FF] p-6 rounded-lg shadow-md flex flex-col items-center h-[360px] w-[284px] mx-auto">
             <Image src={manufacturing} alt="DNA" className="text-5xl text-blue-600 mb-4" />
             <h3 className="text-xl md:text-2xl font-bold text-keyservice mb-2 text-center">Manufacturing Services</h3>
             <p className="text-keyserviceletters text-center">
@@ -24,7 +24,7 @@ const KeyServices = () => {
           </div>
 
           {/* Service 2 */}
-          <div className="bg-customBlue p-6 rounded-lg shadow-md flex flex-col items-center h-[360px] w-[284px] mx-auto">
+          <div className="bg-[#D0D4FF] p-6 rounded-lg shadow-md flex flex-col items-center h-[360px] w-[284px] mx-auto">
             <Image src={trading} className="text-5xl text-blue-600 mb-4" />
             <h3 className="text-xl md:text-2xl font-bold text-keyservice mb-2 text-center">Trading  <br />Services</h3>
             <p className="text-keyserviceletters text-center">
@@ -33,7 +33,7 @@ const KeyServices = () => {
           </div>
 
           {/* Service 3 */}
-          <div className="bg-customBlue p-6 rounded-lg shadow-md flex flex-col items-center h-[360px] w-[284px] mx-auto">
+          <div className="bg-[#D0D4FF] p-6 rounded-lg shadow-md flex flex-col items-center h-[360px] w-[284px] mx-auto">
             <Image src={resarch} className="text-5xl text-blue-600 mb-4" />
             <h3 className="text-xl md:text-2xl font-bold text-keyservice mb-2 text-center">Research and Development</h3>
             <p className="text-keyserviceletters text-center">
