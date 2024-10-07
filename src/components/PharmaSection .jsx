@@ -29,7 +29,7 @@ const PharmaSection = () => {
           </p>
           <a
             href="#"
-            className="bg-button1 text-white py-3 px-6 rounded-md hover:bg-green-500 font-bold"
+            className="bg-[#2DC283] text-white py-3 px-6 rounded-md hover:bg-white hover:text-[#2DC283] font-bold transition duration-300"
           >
             Get a quote
           </a>

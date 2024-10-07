@@ -9,9 +9,9 @@ const InfoSection = () => {
       {/* First Box */}
       <div className="bg-[#B4BBFF] w-full h-full p-6 rounded-lg flex flex-col justify-between">
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-900">Welcome</h2>
-          <h3 className="text-xl md:text-2xl text-blue-600 mt-2">to Biowell Pharmaceuticals</h3>
-          <p className="text-gray-700 mt-4">
+          <h2 className="text-[40px] font-bold text-[#050B7F]">Welcome</h2>
+          <h3 className="text-[30px] font-bold text-[#050B7F] mt-2">to Biowell Pharmaceuticals</h3>
+          <p className="text-black mt-4 text-[20px]">
             We have been committed to improving global health through the development, 
             manufacturing, and distribution of high-quality pharmaceutical products.
           </p>
@@ -28,8 +28,8 @@ const InfoSection = () => {
       {/* Second Box */}
       <div className="bg-[#B4BBFF] w-full h-full p-6 rounded-lg flex flex-col justify-between">
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-900">Our Mission</h2>
-          <p className="text-gray-700 mt-4">
+          <h2 className="text-[40px] md:text-3xl font-bold text-[#050B7F]">Our Mission</h2>
+          <p className="text-black mt-4 text-[20px] ">
             Improve global health through cutting-edge research, manufacturing excellence, 
             and a commitment to quality.
           </p>

@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import logofooter from '../public/logo.svg';
+import logo from '../public/logo1.svg';
+
 
 const Footer = () => {
   return (
@@ -8,10 +10,12 @@ const Footer = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
         {/* Logo and Connection Section */}
         <div className="flex flex-col items-center md:items-start">
-          <Image src={logofooter} alt="Logo" className="w-36 h-auto mb-4" />
-          <h2 className="text-lg font-semibold">Stay Connected</h2>
-          <p className="text-white mt-4 mb-6">
-            Reach out to us for inquiries or further information.
+          <Image src={logo} alt="Logo" className="w-36 h-auto mb-4" />
+          <h2 className="text-2xl font-semibold">Stay Connected</h2>
+          <p className="text-white mt-4 mb-6 text-base">
+            For further inquiries or detailed  <br />information,
+            our team is available <br /> to assist you. 
+            Reach out via <br />our provided contact details.
           </p>
         </div>
 

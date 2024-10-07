@@ -1,11 +1,11 @@
 "use client"
 import { useState } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import product1 from '../public/product1.png';
+import leftArrow from '../public/left.png';
+import rightArrow from '../public/right.png';
 
 const Product = () => {
-  // Define the slides (you can replace these with actual data)
   const slides = [
     {
       title: 'Climmdruff - Anti dandruff Shampoo',
@@ -13,31 +13,10 @@ const Product = () => {
       image: product1,
     },
     {
-      title: 'Another Product',
-      description: 'Description for another product goes here.',
-      image: '/path-to-another-image.png',
-    },
-    {
-        title: 'Another Product',
-        description: 'Description for another product goes here.',
-        image: '/path-to-another-image.png',
-      },
-      {
-        title: 'Another Product',
-        description: 'Description for another product goes here.',
-        image: '/path-to-another-image.png',
-      },
-      {
-        title: 'Another Product',
-        description: 'Description for another product goes here.',
-        image: '/path-to-another-image.png',
-      },
-      {
-        title: 'Another Product',
-        description: 'Description for another product goes here.',
-        image: '/path-to-another-image.png',
-      },
-    // Add more slides as needed
+    title: 'Climmdruff - Anti dandruff Shampoo',
+    description: 'Effective treatment for dandruff and itchy scalp. Gently cleanses while nourishing the hair. Suitable for all hair types. Available in 200ml bottles.',
+    image: product1,
+    }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,54 +30,53 @@ const Product = () => {
   };
 
   return (
-    <section className="bg-[#A4ADFF] py-12">
-      <div className="max-w-screen-lg mx-auto h-[800px] flex flex-col">
-        {/* Title and Description */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-blue-900">OUR PORTFOLIO</h2>
-          <p className="text-lg text-gray-600 mt-2">
-            Explore the high-quality medicines we manufacture for our valued clients. Each product is crafted with care, adhering to the highest standards of safety and efficacy.
+    <section className="bg-[#A4ADFF] py-8">
+      <div className="max-w-screen-md mx-auto px-4">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-navcolor">OUR PORTFOLIO</h2>
+          <p className="text-base text-keyserviceletters mt-3">
+            Explore our high-quality medicines. Each product is crafted with care, adhering to the highest standards.
           </p>
         </div>
 
-        {/* Slider Content */}
-        <div className="relative flex-grow flex items-center justify-center">
-          {/* Left Arrow */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 text-gray-700 hover:text-gray-900"
-          >
-            <ChevronLeftIcon className="w-[59px] h-[103px]" />
-          </button>
+        <div className="relative flex flex-col items-center justify-center">
+          <div className="flex items-center justify-center w-full">
+            <button
+              onClick={prevSlide}
+              className="text-[#6772AB] hover:text-[#232662] transition-colors"
+              aria-label="Previous slide"
+            >
+              <Image src={leftArrow} alt="Previous" width={40} height={40} />
+            </button>
 
-          {/* Slide */}
-          <div className="flex flex-col items-center">
-            <Image
-              src={slides[currentIndex].image}
-              alt={slides[currentIndex].title}
-              width={330}
-              height={473}
-              className="object-contain mb-4"
-            />
-            <h3 className="text-[28px] font-bold text-[#232662]">{slides[currentIndex].title}</h3>
-            <p className="text-gray-600 mt-2 text-center max-w-md">{slides[currentIndex].description}</p>
+            <div className="flex flex-col items-center max-w-full px-4">
+              <Image
+                src={slides[currentIndex].image}
+                alt={slides[currentIndex].title}
+                width={250}
+                height={357}
+                className="object-contain mb-6"
+              />
+              <h3 className="text-2xl font-bold text-[#232662] text-center mb-2">{slides[currentIndex].title}</h3>
+              <p className="text-black text-center text-base max-w-sm">{slides[currentIndex].description}</p>
+            </div>
+
+            <button
+              onClick={nextSlide}
+              className="text-[#6772AB] hover:text-[#232662] transition-colors"
+              aria-label="Next slide"
+            >
+              <Image src={rightArrow} alt="Next" width={40} height={40} />
+            </button>
           </div>
 
-          {/* Right Arrow */}
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 text-gray-700 hover:text-gray-900"
-          >
-            <ChevronRightIcon className="w-[59px] h-[103px]" />
-          </button>
-
-          {/* Dot Indicators */}
-          <div className="absolute bottom-4 flex space-x-2">
+          <div className="flex space-x-3 mt-6">
             {slides.map((_, index) => (
-              <div
+              <button
                 key={index}
-                className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
+                className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-[#232662]' : 'bg-[#6772AB]'} transition-colors`}
                 onClick={() => setCurrentIndex(index)}
+                aria-label={`Go to slide ${index + 1}`}
               />
             ))}
           </div>
