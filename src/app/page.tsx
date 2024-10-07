@@ -5,6 +5,7 @@ import AboutSection from "../components/AboutSection";
 import KeyServices from "../components/KeyServices";
 import SliderDoctorDetails from "../components/SliderDoctorDetails";
 import PharmaSection from "../components/PharmaSection .jsx";
+import Product from "../components/Product";
 export default function Home() {
   return (
    <div>
@@ -12,6 +13,7 @@ export default function Home() {
     <InfoSection/>
     <AboutSection/>
     <KeyServices/>
+    <Product/>
     <SliderDoctorDetails/>
     <PharmaSection/>
    </div>
