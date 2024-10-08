@@ -3,7 +3,7 @@ import { FaPills, FaExchangeAlt, FaMicroscope } from 'react-icons/fa';
 import Image from 'next/image';
 import manufacturing from '../public/manufacturing.svg';
 import trading from '../public/trading.svg'
-import resarch from '../public/Resarch.svg';
+import resarch from '../public/resarch.svg';
 
 const KeyServices = () => {
   return (
