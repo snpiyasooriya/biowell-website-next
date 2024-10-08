@@ -5,18 +5,18 @@ import pill from '../public/pill.png';
 
 const InfoSection = () => {
   return (
-    <div className="max-w-[1196px] w-full h-auto mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10 mb-16 mt-4"> 
+    <div className="max-w-[1196px] w-full h-auto mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-5 mb-16 mt-8 md:mt-4"> 
       {/* First Box */}
-      <div className="bg-[#B4BBFF] w-full h-full p-6 rounded-lg flex flex-col justify-between">
+      <div className="bg-white md:bg-[#B4BBFF] w-full h-full p-6 rounded-lg flex flex-col justify-between">
         <div>
-          <h2 className="text-[40px] font-bold text-[#050B7F]">Welcome</h2>
-          <h3 className="text-[30px] font-bold text-[#050B7F] mt-2">to Biowell Pharmaceuticals</h3>
-          <p className="text-black mt-4 text-[20px]">
+          <h2 className="text-[20px] md:text-[40px] font-normal md:font-bold text-[#050B7F]">Welcome</h2>
+          <h3 className="text-[20px] md:text-[30px] font-bold text-[#050B7F] mt-2">to Biowell Pharmaceuticals</h3>
+          <p className="text-black mt-4 text-[12px] md:text-[20px] font-medium md:font-normal">
             We have been committed to improving global health through the development, 
             manufacturing, and distribution of high-quality pharmaceutical products.
           </p>
         </div>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 hidden md:flex justify-center">
           <Image
             src={dna}
             alt="DNA Graphic"
@@ -26,15 +26,15 @@ const InfoSection = () => {
       </div>
 
       {/* Second Box */}
-      <div className="bg-[#B4BBFF] w-full h-full p-6 rounded-lg flex flex-col justify-between">
+      <div className="bg-white md:bg-[#B4BBFF] w-full h-full p-6 rounded-lg flex flex-col justify-between">
         <div>
-          <h2 className="text-[40px] md:text-3xl font-bold text-[#050B7F]">Our Mission</h2>
-          <p className="text-black mt-4 text-[20px] ">
+          <h2 className="text-[20px] md:text-3xl font-bold text-[#050B7F]">Our Mission</h2>
+          <p className="text-black mt-4 text-[12px] md:text-[20px] font-medium md:font-normal">
             Improve global health through cutting-edge research, manufacturing excellence, 
             and a commitment to quality.
           </p>
         </div>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 hidden md:flex justify-center">
           <Image
             src={pill}
             alt="Pills Graphic"
