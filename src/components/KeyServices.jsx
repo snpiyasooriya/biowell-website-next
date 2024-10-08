@@ -13,7 +13,7 @@ const KeyServices = () => {
         <h2 className="text-[20px] font-semibold md:text-4xl md:font-bold text-[#0053CC] md:text-navcolor mb-7">KEY SERVICES</h2>
         
         {/* Grid layout with 25px gap between boxes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[50px] sm:gap-[20px] -mx-5 sm:mx-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[50px] sm:text-[20px] -mx-5 sm:mx-0">
           {/* Service 1 */}
           <div className="bg-[#D0D4FF] p-6 rounded-lg shadow-md flex flex-col items-center h-[208px] w-[288px] mx-auto sm:h-[360px] sm:w-[284px]">
             <div className="flex items-center mb-2 sm:flex-col">
