@@ -14,17 +14,23 @@ const HeroSlider = () => {
     {
       image: heroImage1,
       imageMobile: heroImage1Mobile,
-      title: "Translating groundbreaking science into tomorrow's cures",
+      title: "Translating groundbreaking",
+      title2: "science into",
+      title3: "tomorrow's cures",
     },
     {
       image: heroImage2,
       imageMobile: heroImage2Mobile,
-      title: "Advancing medical research for a healthier future",
+      title: "Translating groundbreaking",
+      title2: "science into",
+      title3: "tomorrow's cures",
     },
     {
       image: heroImage3,
       imageMobile: heroImage3Mobile,
-      title: "Innovative solutions for life-changing treatments",
+      title: "Translating groundbreaking",
+      title2: "science into",
+      title3: "tomorrow's cures",
     },
   ];
 
@@ -39,7 +45,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <section className="relative  text-white">
+    <section className="relative text-white">
       <div className="w-full">
         <div className="relative w-full h-[353px] md:h-[800px] overflow-hidden">
           {slides.map((slide, index) => (
@@ -55,7 +61,7 @@ const HeroSlider = () => {
                 alt={slide.title}
                 layout="fill"
                 objectFit="cover"
-                className="opacity-70 md:hidden  bg-[#0053CC]"
+                className="opacity-70 md:hidden bg-[#0053CC]"
                 priority={index === 0}
                 sizes="(max-width: 768px) 320px, 100vw"
               />
@@ -65,16 +71,25 @@ const HeroSlider = () => {
                 alt={slide.title}
                 layout="fill"
                 objectFit="cover"
-                className="opacity-70 hidden md:block bg-[#1D2068]"
+                className=" hidden md:block bg-[#1D2068]"
                 priority={index === 0}
                 sizes="(max-width: 768px) 320px, 100vw"
               />
 
               <div className="absolute inset-0 bg-[#1D2068] opacity-50"></div>
               <div className="absolute inset-0 flex flex-col justify-end md:justify-center px-4 md:px-16 max-w-7xl mx-auto pb-8 md:pb-0">
-                <h1 className="text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-center md:text-left">
-                  {slide.title}
+                {/* Mobile: display each title part in separate lines */}
+                <h1 className="text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-center md:text-left md:hidden">
+                <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title}</span>  
+                <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title2}</span>
+                <span className="block text-[30px] leading-[30px]">{slide.title3}</span>               
                 </h1>
+
+                {/* Desktop: display the whole title in a single line */}
+                <h1 className="hidden md:block text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-center md:text-left">
+                  {slide.title} {slide.title2} {slide.title3}
+                </h1>
+
                 <Link 
                   href="#learn-more" 
                   className="hidden md:inline-block text-white border border-white py-2 px-4 rounded-md font-semibold text-[30px] w-[264px] h-[66px] hover:bg-white hover:text-[#1D2068] transition-colors duration-300 text-center leading-[58px]"

@@ -1,22 +1,24 @@
-"use client"
+'use client'
 import { useState } from 'react';
 import Image from 'next/image';
 import product1 from '../public/product1.png';
-import leftArrow from '../public/left.png';
-import rightArrow from '../public/right.png';
+import leftArrow from '../public/leftarrow.svg';
+import rightArrow from '../public/rightarrow.svg';
 
 const Product = () => {
   const slides = [
     {
-      title: 'Climmdruff - Anti dandruff Shampoo',
+      titlePart1: 'Climmdruff',
+      titlePart2: 'Anti dandruff Shampoo',
       description: 'Effective treatment for dandruff and itchy scalp.',
-      description2: 'Gently cleanses while suitable for all hair types. Available in 200ml bottles.',
+      description2: 'Gently cleanses while nourishing the hair. Suitable for all hair types. Available in 200ml bottles.',
       image: product1,
     },
     {
-      title: 'Climmdruff - Anti dandruff Shampoo',
+      titlePart1: 'Climmdruff',
+      titlePart2: 'Anti dandruff Shampoo',
       description: 'Effective treatment for dandruff and itchy scalp.',
-      description2: 'Gently cleanses while suitable for all hair types. Available in 200ml bottles.',
+      description2: 'Gently cleanses while nourishing the hair. Suitable for all hair types. Available in 200ml bottles.',
       image: product1,
     }
   ];
@@ -32,25 +34,27 @@ const Product = () => {
   };
 
   return (
-    <section className="bg-[#A4ADFF] py-8">
-      <div className="max-w-screen-md mx-auto px-4">
-        <div className="text-center ">
-          <h2 className="text-[20px] font-bold text-navcolor leading-[25px] sm:text-4xl sm:leading-[50px] sm:text-[40px]">WHAT WE PRODUCE</h2>
-          <p className="text-[12px] leading-[18px] text-keyserviceletters mt-3 sm:text-[20px] sm:leading-normal">
+    <section className="bg-[#A4ADFF] py-6">
+      <div className="max-w-[320px] sm:max-w-screen-md mx-auto px-4">
+        <div className="text-center">
+          <h2 className="text-[20px] font-bold text-navcolor leading-[25px] sm:text-[40px] sm:leading-[50px] lg:text-[40px] lg:leading-[50px]">
+            WHAT WE PRODUCE
+          </h2>
+          <p className="text-[14px] leading-[20px] sm:text-[20px] sm:leading-[30px] mt-2 sm:mt-3 lg:text-[20px] lg:leading-[30px]">
             Explore the high-quality medicines we manufacture for our valued clients.
             Each product is crafted with care, adhering to the highest standards of safety and efficacy.
           </p>
         </div>
 
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center mt-6">
           <div className="flex flex-col items-center max-w-full px-4">
             <div className="relative">
               <Image
                 src={slides[currentIndex].image}
-                alt={slides[currentIndex].title}
-                width={330}
+                alt={`${slides[currentIndex].titlePart1} ${slides[currentIndex].titlePart2}`}
+                width={319}
                 height={473}
-                className="object-contain "
+                className="object-contain"
               />
               <button
                 onClick={prevSlide}
@@ -61,15 +65,19 @@ const Product = () => {
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-[#6772AB] hover:text-[#232662] transition-colors sm:hidden"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-white hover:text-[#232662] transition-colors sm:hidden"
+
                 aria-label="Next slide"
               >
                 <Image src={rightArrow} alt="Next" width={25} height={24} />
               </button>
             </div>
-            <h3 className="text-[20px] sm:text-[28px] font-bold text-[#232662] text-center mb-0 sm:mb-2">{slides[currentIndex].title}</h3>
-            <p className="text-black text-center text-[15px] leading-[20px] sm:text-base max-w-sm">{slides[currentIndex].description}</p>
-            <p className="text-black text-center text-[15px] leading-[20px] sm:text-base max-w-sm">{slides[currentIndex].description2}</p>
+            <h3 className="text-[16px] sm:text-[20px] font-bold text-[#232662] text-center mt-4 sm:mt-2">
+              <span className="block">{slides[currentIndex].titlePart1}</span>
+              <span className="block">{slides[currentIndex].titlePart2}</span>
+            </h3>
+            <p className="text-black text-center text-[12px] leading-[18px] sm:text-base mt-1">{slides[currentIndex].description}</p>
+            <p className="text-black text-center text-[12px] leading-[18px] sm:text-base mt-1">{slides[currentIndex].description2}</p>
           </div>
 
           <button
@@ -82,18 +90,18 @@ const Product = () => {
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 z-10 text-[#6772AB] hover:text-[#232662] transition-colors hidden sm:block"
+            className="absolute right-0 z-10 text-white hover:text-[#232662] transition-colors hidden sm:block"
             aria-label="Next slide"
           >
-            <Image src={rightArrow} alt="Next" width={40} height={40} />
+            <Image src={rightArrow} alt="Next" width={40} height={40} className="text-white" />
           </button>
         </div>
 
-        <div className="flex justify-center space-x-3 mt-6">
+        <div className="flex justify-center space-x-2 mt-4">
           {slides.map((_, index) => (
             <button
               key={index}
-              className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-[#232662]' : 'bg-[#6772AB]'} transition-colors`}
+              className={`w-2.5 h-2.5 rounded-full ${index === currentIndex ? 'bg-[#232662]' : 'bg-[#6772AB]'} transition-colors`}
               onClick={() => setCurrentIndex(index)}
               aria-label={`Go to slide ${index + 1}`}
             />

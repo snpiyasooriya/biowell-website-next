@@ -38,33 +38,52 @@ const Drdetails = () => {
 
   return (
     <section className="py-8 md:py-16 z-10">
-      <div className='w-full   md:bg-[#D0D4FF]'>
+      <div className="w-full md:bg-[#D0D4FF]">
         <div className="container mx-auto flex justify-center items-center relative">
           {/* Slider Section */}
-          <div className="relative w-full max-w-full h-[435px] md:h-[500px] overflow-hidden m-4 md:m-0">
-            {/* Image - Use different images for mobile and desktop */}
-            <div className="absolute inset-0 bg-[#0053CC] md:hidden">
-              <Image
-                src={slides[currentIndex].imageMobile}
-                alt={slides[currentIndex].title}
-                layout="fill"
-                objectFit="cover"
-                sizes="(max-width: 320px) 100vw, 320px"
-              />
+          <div className="relative w-full max-w-full h-[500px] md:h-[435px] overflow-hidden m-4 md:m-0">
+            {/* Mobile Image */}
+            <div className="absolute inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-center w-[288px] h-[435px]">
+              <div className="relative w-[288px] h-[290px]">
+                <Image
+                  src={slides[currentIndex].imageMobile}
+                  alt={slides[currentIndex].title}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              {/* Mobile Text Centered */}
+              <div className="text-center text-white p-2 flex-grow flex flex-col justify-center">
+                <h2 className="text-lg font-bold mb-2 leading-snug">
+                  High Standards and Reliable Results
+                </h2>
+                <p className="text-xs leading-snug">
+                  "As a practicing physician, I have had the opportunity to prescribe
+                  various products from 'Biowell' to my patients. I am particularly
+                  impressed with their rigorous quality control measures and commitment to innovation."
+                </p>
+                <h3 className="text-lg font-semibold mt-4">
+                  {slides[currentIndex].title}
+                </h3>
+                <p className="text-xs mt-1">
+                  {slides[currentIndex].description}
+                </p>
+              </div>
             </div>
+
+            {/* Desktop Image */}
             <Image
               src={slides[currentIndex].image}
               alt={slides[currentIndex].title}
               layout="fill"
               objectFit="cover"
               sizes="(max-width: 768px) 100vw, 768px"
-              className="absolute inset-0 hidden md:block" // Show only on desktop
+              className="absolute inset-0 hidden md:block"
             />
 
-            {/* Text and Doctor's Details overlaid on the image */}
+            {/* Desktop Text (Unchanged) */}
             <div className="absolute inset-0 flex flex-col justify-between p-4 md:p-8">
-              {/* Upper text - centered and at the bottom on mobile, left-aligned on larger screens */}
-              <div className="w-full md:w-2/3 text-center md:text-left md:align-text-bottom text-white md:text-blue-900 flex flex-col justify-end md:justify-start h-full md:h-auto ">
+              <div className="w-full md:w-2/3 text-center md:text-left text-white md:text-blue-900 hidden md:flex flex-col justify-end md:justify-start h-full md:h-auto">
                 <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-0">
                   High Standards and Reliable Results
                 </h2>
@@ -78,28 +97,28 @@ const Drdetails = () => {
                 </p>
               </div>
 
-              {/* Centered doctor's details */}
-              <div className="flex flex-col justify-center items-center text-center text-white mt-0 md:mt-16 ">
+              {/* Desktop Doctor's Details (Unchanged) */}
+              <div className="hidden md:flex flex-col justify-center items-center text-center text-white mt-0 md:mt-16">
                 <h3 className="text-lg md:text-2xl lg:text-3xl font-semibold">
                   {slides[currentIndex].title}
                 </h3>
-                <p className="text-xs md:text-base lg:text-lg mt-1 md:mt-2 ">
+                <p className="text-xs md:text-base lg:text-lg mt-1 md:mt-2">
                   {slides[currentIndex].description}
                 </p>
               </div>
+            </div>
 
-              {/* Dots at the bottom center */}
-              <div className="flex justify-center space-x-2 md:space-x-4 mt-2 md:mt-12">
-                {slides.map((_, index) => (
-                  <span
-                    key={index}
-                    onClick={() => setCurrentIndex(index)}
-                    className={`cursor-pointer w-2 h-2 md:w-3 md:h-3 rounded-full transition-transform duration-300 ${
-                      index === currentIndex ? 'bg-blue-600 scale-110' : 'bg-gray-400 hover:bg-gray-600'
-                    }`}
-                  />
-                ))}
-              </div>
+            {/* Dots Navigation (Moved Here) */}
+            <div className="flex justify-center space-x-2 md:space-x-4 mt-2 md:mt-12 absolute bottom-4 left-1/2 transform -translate-x-1/2">
+              {slides.map((_, index) => (
+                <span
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`cursor-pointer w-2 h-2 md:w-3 md:h-3 rounded-full transition-transform duration-300 ${
+                    index === currentIndex ? 'bg-blue-600 scale-110' : 'bg-gray-400 hover:bg-gray-600'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
