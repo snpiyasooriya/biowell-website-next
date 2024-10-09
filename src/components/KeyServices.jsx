@@ -1,8 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import manufacturing from '../public/manufacturing.svg';
+<<<<<<< HEAD
 import trading from '../public/trading.svg';
 import resarch from '../public/Resarch.svg';
+=======
+import trading from '../public/trading.svg'
+import resarch from '../public/resarch.svg';
+>>>>>>> 8d3bfd8c24e225a4ab65f84bcf22ac03c81dd606
 
 const KeyServices = () => {
   return (
