@@ -14,23 +14,23 @@ const HeroSlider = () => {
     {
       image: heroImage1,
       imageMobile: heroImage1Mobile,
-      title: "Translating groundbreaking",
-      title2: "science into",
-      title3: "tomorrow's cures",
+      title: "Translating ",
+      title2: "groundbreaking science ",
+      title3: "into Tomorrow's Cures",
     },
     {
       image: heroImage2,
       imageMobile: heroImage2Mobile,
       title: "Translating groundbreaking",
       title2: "science into",
-      title3: "tomorrow's cures",
+      title3: "Tomorrow's Cures",
     },
     {
       image: heroImage3,
       imageMobile: heroImage3Mobile,
       title: "Translating groundbreaking",
       title2: "science into",
-      title3: "tomorrow's cures",
+      title3: "Tomorrow's Cures",
     },
   ];
 
@@ -58,7 +58,7 @@ const HeroSlider = () => {
               {/* Use mobile image for smaller screens */}
               <Image
                 src={slide.imageMobile}
-                alt={slide.title}
+                
                 layout="fill"
                 objectFit="cover"
                 className="opacity-70 md:hidden bg-[#0053CC]"
@@ -68,7 +68,7 @@ const HeroSlider = () => {
               {/* Use desktop image for larger screens */}
               <Image
                 src={slide.image}
-                alt={slide.title}
+                
                 layout="fill"
                 objectFit="cover"
                 className=" hidden md:block bg-[#1D2068]"
@@ -78,17 +78,18 @@ const HeroSlider = () => {
 
               <div className="absolute inset-0 bg-[#1D2068] opacity-50"></div>
               <div className="absolute inset-0 flex flex-col justify-end md:justify-center px-4 md:px-16 max-w-7xl mx-auto pb-8 md:pb-0">
-                {/* Mobile: display each title part in separate lines */}
-                <h1 className="text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-center md:text-left md:hidden">
-                <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title}</span>  
-                <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title2}</span>
-                <span className="block text-[30px] leading-[30px]">{slide.title3}</span>               
+               {/* Mobile: display each title part in separate lines */}
+                <h1 className="text-2xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left md:hidden">
+                  <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title}</span>  
+                  <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title2}</span>
+                  <span className="block text-[25px] leading-[20px] text-center">{slide.title3}</span>
                 </h1>
 
                 {/* Desktop: display the whole title in a single line */}
-                <h1 className="hidden md:block text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-center md:text-left">
+                <h1 className="hidden md:block text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left clash-display">
                   {slide.title} {slide.title2} {slide.title3}
                 </h1>
+
 
                 <Link 
                   href="#learn-more" 

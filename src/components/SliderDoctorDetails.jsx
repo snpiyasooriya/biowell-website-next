@@ -41,7 +41,7 @@ const Drdetails = () => {
       <div className="w-full md:bg-[#D0D4FF]">
         <div className="container mx-auto flex justify-center items-center relative">
           {/* Slider Section */}
-          <div className="relative w-full max-w-full h-[500px] md:h-[435px] overflow-hidden m-4 md:m-0">
+          <div className="relative w-full max-w-full h-[500px] md:h-[500px] overflow-hidden m-4 md:m-0">
             {/* Mobile Image */}
             <div className="absolute inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-center w-[288px] h-[435px]">
               <div className="relative w-[288px] h-[290px]">
