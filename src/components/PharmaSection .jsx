@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import bootomimg from '../public/Bottom.jpg';
+import bootomimg from '../public/img/production.jpg';
 
 const PharmaSection = () => {
   return (

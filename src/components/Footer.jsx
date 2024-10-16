@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../public/logo1.svg';
+import logo from '../public/img/logo_white.svg';
 
 const Footer = () => {
   return (

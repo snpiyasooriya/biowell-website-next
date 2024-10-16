@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import doctordetails from '../public/doctordetails.png';
-import doctordetailsMobile from '../public/doctordetailsmobile.png';
+import doctordetails from '../public/img/doctor.png';
+import doctordetailsMobile from '../public/img/mobile/doctor_mobile.png';
 
 const Drdetails = () => {
   const slides = [
@@ -37,7 +37,7 @@ const Drdetails = () => {
   }, [slides.length]);
 
   return (
-    <section className="py-8 md:py-16 z-10">
+    <section id="testomonials" className="py-8 md:py-16 z-10">
       <div className="w-full md:bg-[#D0D4FF]">
         <div className="container mx-auto flex justify-center items-center relative">
           {/* Slider Section */}
@@ -58,9 +58,9 @@ const Drdetails = () => {
                   High Standards and Reliable Results
                 </h2>
                 <p className="text-xs leading-snug">
-                  "As a practicing physician, I have had the opportunity to prescribe
-                  various products from 'Biowell' to my patients. I am particularly
-                  impressed with their rigorous quality control measures and commitment to innovation."
+                  &ldquo;As a practicing physician, I have had the opportunity to prescribe
+                  various products from &lsquo;Biowell&rsquo; to my patients. I am particularly
+                  impressed with their rigorous quality control measures and commitment to innovation.&rdquo;
                 </p>
                 <h3 className="text-lg font-semibold mt-4">
                   {slides[currentIndex].title}
@@ -88,12 +88,12 @@ const Drdetails = () => {
                   High Standards and Reliable Results
                 </h2>
                 <p className="text-xs md:text-base lg:text-lg mt-2 md:mt-4 leading-relaxed md:text-black">
-                  "As a practicing physician, I have had the opportunity to prescribe
-                  various products from 'Biowell' to my patients. The consistent
+                  &ldquo;As a practicing physician, I have had the opportunity to prescribe
+                  various products from &lsquo;Biowell&rsquo; to my patients. The consistent
                   quality and effectiveness of their medications have significantly
                   improved patient outcomes in my practice. I am particularly
                   impressed with their rigorous quality control measures and
-                  commitment to innovation."
+                  commitment to innovation.&rdquo;
                 </p>
               </div>
 

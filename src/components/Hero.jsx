@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import heroImage1 from '../public/heroo.png'; // Update with your actual image paths
-import heroImage2 from '../public/heroo.png';
-import heroImage3 from '../public/heroo.png';
-import heroImage1Mobile from '../public/heromobile.png'; // Update with your actual mobile image paths
-import heroImage2Mobile from '../public/heromobile.png';
-import heroImage3Mobile from '../public/heromobile.png';
+import heroImage1 from '../public/img/hero.png'; // Update with your actual image paths
+import heroImage2 from '../public/img/hero.png';
+import heroImage3 from '../public/img/hero.png';
+import heroImage1Mobile from '../public/img/mobile/hero_mobile.png'; // Update with your actual mobile image paths
+import heroImage2Mobile from '../public/img/mobile/hero_mobile.png';
+import heroImage3Mobile from '../public/img/mobile/hero_mobile.png';
 
 const HeroSlider = () => {
   const slides = [
@@ -42,33 +42,33 @@ const HeroSlider = () => {
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   return (
-    <section className="relative text-white">
+    <section id="hero" className="relative text-white pt-[88px]">
       <div className="w-full">
-        <div className="relative w-full h-[353px] md:h-[800px] overflow-hidden">
+        <div className="relative w-full  md:h-[800px] overflow-hidden">
           {slides.map((slide, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? 'opacity-100' : 'opacity-0'
+                index === currentSlide ? 'opacity-100' : 'opacity-100'
               }`}
             >
               {/* Use mobile image for smaller screens */}
               <Image
                 src={slide.imageMobile}
-                
+                alt={`Hero image ${index + 1} - mobile`}
                 layout="fill"
                 objectFit="cover"
-                className="opacity-70 md:hidden bg-[#0053CC]"
+                className="opacity-100 md:hidden bg-[#0053CC]"
                 priority={index === 0}
                 sizes="(max-width: 768px) 320px, 100vw"
               />
               {/* Use desktop image for larger screens */}
               <Image
                 src={slide.image}
-                
+                alt={`Hero image ${index + 1} - desktop`}
                 layout="fill"
                 objectFit="cover"
                 className=" hidden md:block bg-[#1D2068]"
@@ -76,7 +76,7 @@ const HeroSlider = () => {
                 sizes="(max-width: 768px) 320px, 100vw"
               />
 
-              <div className="absolute inset-0 bg-[#1D2068] opacity-50"></div>
+              <div className="absolute inset-0 bg-[#1D2068] opacity-0"></div>
               <div className="absolute inset-0 flex flex-col justify-end md:justify-center px-4 md:px-16 max-w-7xl mx-auto pb-8 md:pb-0">
                {/* Mobile: display each title part in separate lines */}
                 <h1 className="text-2xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left md:hidden">

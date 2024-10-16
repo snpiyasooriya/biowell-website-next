@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react';
 import Image from 'next/image';
-import product1 from '../public/product1.png';
-import leftArrow from '../public/leftarrow.svg';
-import rightArrow from '../public/rightarrow.svg';
+import product1 from '../public/img/products/anti_dandruff_climidruff.png';
+import leftArrow from '../public/img/left_button.svg';
+import rightArrow from '../public/img/right_button.svg';
 
 const Product = () => {
   const slides = [
@@ -34,15 +34,15 @@ const Product = () => {
   };
 
   return (
-    <section className="bg-[#A4ADFF] py-6">
+    <section id="products" className="bg-[#A4ADFF] py-6">
       <div className="max-w-[320px] sm:max-w-screen-md mx-auto px-4">
         <div className="text-center">
           <h2 className="text-[20px] font-bold text-navcolor leading-[25px] sm:text-[40px] sm:leading-[50px] lg:text-[40px] lg:leading-[50px]">
             WHAT WE PRODUCE
           </h2>
           <p className="text-[14px] leading-[20px] sm:text-[20px] sm:leading-[30px] mt-2 sm:mt-3 lg:text-[20px] lg:leading-[30px]">
-            Explore the high-quality medicines we manufacture for our valued clients.
-            Each product is crafted with care, adhering to the highest standards of safety and efficacy.
+            Discover our premium range of cosmetic products, meticulously crafted for our esteemed clients.
+            We take pride in manufacturing high-quality cosmetics that meet the most rigorous standards of safety and effectiveness.
           </p>
         </div>
 

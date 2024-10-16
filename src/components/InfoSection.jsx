@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import dna from '../public/dna.png';
-import pill from '../public/pill.png';
+import dna from '../public/img/dna.png';
+import pill from '../public/img/opened_capsule.png';
 
 const InfoSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import group from '../public/Group.svg'
-import logo1 from '../public/logo.svg'
+import group from '../public/img/mesh.svg'
+import logo1 from '../public/img/logo.svg'
 
 const AboutSection = () => {
   return (
