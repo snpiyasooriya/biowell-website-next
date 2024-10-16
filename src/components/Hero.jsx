@@ -45,9 +45,9 @@ const HeroSlider = () => {
   }, [slides.length]);
 
   return (
-    <section id="hero" className="relative text-white pt-[88px]">
+    <section id="hero" className="relative text-white pt-[82px]">
       <div className="w-full">
-        <div className="relative w-full  md:h-[800px] overflow-hidden">
+        <div className="relative w-full h-[353px] md:h-[800px] overflow-hidden">
           {slides.map((slide, index) => (
             <div
               key={index}

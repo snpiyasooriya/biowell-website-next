@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="text-white font-bold text-2xl cursor-pointer"  onClick={(e) => handleNavClick(e, '#hero')}>
-          <Image src={logo} alt="Logo" width={150} height={100} />
+          <Image className="pl-[16px]" src={logo} alt="Logo" width={150} height={100} />
         </div>
 
         {/* Menu Icon for Mobile */}
