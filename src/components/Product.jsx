@@ -5,7 +5,9 @@ import product1 from '../public/img/products/anti_dandruff_climidruff.png';
 import CrystalGlow from '../public/img/products/crystal_glow.png';
 import SebioGel from '../public/img/products/sebio_gel.png';
 import RetinaGlow from '../public/img/products/retin_glow.png';
+import Acnepro from '../public/img/products/acnepro.png';
 import Regrow from '../public/img/products/regrow.png';
+import Biotin from '../public/img/products/biotin.png';
 import leftArrow from '../public/img/left_button.svg';
 import rightArrow from '../public/img/right_button.svg';
 
@@ -19,6 +21,13 @@ const Product = () => {
       image: product1,
     },
     {
+      titlePart1: 'Vitaceuticals Biotin Hair Shampoo',
+      titlePart2: 'For thicker, fuller & helthier looking hair.',
+      description: 'Vitaceuticals Biotin hair shampoo promotes hair growth and delivers essential moisture to the hair providing nourishing hydration to each strand down to root.',
+      description2: 'Suitable for all hair types.',
+      image: Biotin,
+    },
+    {
       titlePart1: 'Crystal Glow',
       titlePart2: 'Advanced Skin Repair Serum',
       description: 'Scientifically designed pigment-lightening serum that enhances skin tone and reduces melanin. Contains brightening actives that work synergistically to reduce dark spots and pigmentation effectively.',
@@ -26,7 +35,14 @@ const Product = () => {
       image: CrystalGlow,
     },
     {
-      titlePart1: 'REGROW',
+      titlePart1: 'Acnepro ',
+      titlePart2: 'Gel Cleanser',
+      description: 'Specially created to cleans the skin & prevent blemishes. Acnepro gel kills acne bacteria and reduce the iritation.',
+      description2: 'Triple action with D-Panthenol, salicylic acid & tea tree oil.',
+      image: Acnepro,
+    },
+    {
+      titlePart1: 'Regrow',
       titlePart2: 'Canadian Formula Energizing Hair Lotion',
       description: 'Effective control of hair loss with targeted action on DiHydro Testosterone, which is responsible for obstructing hair follicle pores.',
       description2: 'Contains a triple-action complex of Capigen®, Saw Palmetto, Pumpkin Seeds, and Nettle. Suitable for men, women, and all hair types. Sulfate and paraben-free.',
