@@ -2,6 +2,10 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import product1 from '../public/img/products/anti_dandruff_climidruff.png';
+import CrystalGlow from '../public/img/products/crystal_glow.png';
+import SebioGel from '../public/img/products/sebio_gel.png';
+import RetinaGlow from '../public/img/products/retin_glow.png';
+import Regrow from '../public/img/products/regrow.png';
 import leftArrow from '../public/img/left_button.svg';
 import rightArrow from '../public/img/right_button.svg';
 
@@ -15,12 +19,33 @@ const Product = () => {
       image: product1,
     },
     {
-      titlePart1: 'Climmdruff',
-      titlePart2: 'Anti dandruff Shampoo',
-      description: 'Effective treatment for dandruff and itchy scalp.',
-      description2: 'Gently cleanses while nourishing the hair. Suitable for all hair types. Available in 200ml bottles.',
-      image: product1,
-    }
+      titlePart1: 'Crystal Glow',
+      titlePart2: 'Advanced Skin Repair Serum',
+      description: 'Scientifically designed pigment-lightening serum that enhances skin tone and reduces melanin. Contains brightening actives that work synergistically to reduce dark spots and pigmentation effectively.',
+      description2: 'Includes Tranexamic Acid (5%), Niacinamide (4%), and Glycolic Acid (3%). For external use only. Apply 3-5 drops to clean and toned skin twice daily. Use sunscreen in combination. Avoid eye contact and discontinue use if irritation occurs.',
+      image: CrystalGlow,
+    },
+    {
+      titlePart1: 'REGROW',
+      titlePart2: 'Canadian Formula Energizing Hair Lotion',
+      description: 'Effective control of hair loss with targeted action on DiHydro Testosterone, which is responsible for obstructing hair follicle pores.',
+      description2: 'Contains a triple-action complex of Capigen®, Saw Palmetto, Pumpkin Seeds, and Nettle. Suitable for men, women, and all hair types. Sulfate and paraben-free.',
+      image: Regrow,
+    },
+    {
+      titlePart1: 'Retin Glow',
+      titlePart2: 'Advanced Skin Repair Serum',
+      description: 'An acne and anti-wrinkle serum with 0.5% retinol to reduce wrinkles, pores, and scars while improving skin texture and hydration.',
+      description2: 'Contains 0.5% Retinol, 1% Hyaluronic Acid, Aloe Vera, Glycerin, Vitamin E, and pH balancers; free from fragrance, sulfates, and parabens; suitable for all skin types.',
+      image: RetinaGlow,
+    },
+    {
+      titlePart1: 'Sebiogel',
+      titlePart2: 'Cleansing Gel',
+      description: 'Anti-Acne Care: Provides clearer skin, comfort and calming.',
+      description2: 'With Natural Green Tea Extract. Purifying cleansing gel for acne-prone skin. Exclusive complex Triple Action. Intensive care. ',
+      image: SebioGel,
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

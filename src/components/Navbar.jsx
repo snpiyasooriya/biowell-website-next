@@ -16,13 +16,20 @@ const Navbar = () => {
     e.preventDefault();
     const section = document.querySelector(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const offset = 82; // Adjust this value based on your navbar height
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
     setIsOpen(false);
   };
 
   return (
-    <nav className="bg-[#050B7F] md:px-[122px] py-4 fixed top-0 left-0 right-0 z-50">
+    <nav id="navi" className="bg-[#050B7F] md:px-[122px] py-4 fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="text-white font-bold text-2xl cursor-pointer"  onClick={(e) => handleNavClick(e, '#hero')}>
