@@ -59,9 +59,11 @@ const Drdetails = () => {
                   High Standards and Reliable Results
                 </h2>
                 <p className="text-xs leading-snug">
-                  "As a practicing physician, I have had the opportunity to prescribe
-                  various products from 'Biowell' to my patients. I am particularly
-                  impressed with their rigorous quality control measures and commitment to innovation."
+                  &quot;
+                  As a practicing physician, I have had the opportunity to prescribe
+                  various products from &lsquo; Bio well&rsquo;  to my patients. I am particularly
+                  impressed with their rigorous quality control measures and commitment to innovation.
+                  &quot;
                 </p>
                 <h3 className="text-lg font-semibold mt-4">
                   {slides[currentIndex].title}
@@ -89,12 +91,11 @@ const Drdetails = () => {
                   High Standards and Reliable Results
                 </h2>
                 <p className="text-xs md:text-base lg:text-lg mt-2 md:mt-4 leading-relaxed md:text-black">
-                  &ldquo;As a practicing physician, I have had the opportunity to prescribe
-                  various products from &lsquo;Biowell&rsquo; to my patients. The consistent
-                  quality and effectiveness of their medications have significantly
-                  improved patient outcomes in my practice. I am particularly
-                  impressed with their rigorous quality control measures and
-                  commitment to innovation.&rdquo;
+                  &quot;
+                  As a practicing physician, I have had the opportunity to prescribe
+                  various products from &lsquo; Bio well&rsquo;  to my patients. I am particularly
+                  impressed with their rigorous quality control measures and commitment to innovation.
+                  &quot;
                 </p>
               </div>
 
