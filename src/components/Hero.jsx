@@ -47,11 +47,11 @@ const HeroSlider = () => {
   return (
     <section id="hero" className="relative text-white pt-[82px]">
       <div className="w-full">
-        <div className="relative w-full h-[353px] md:h-[800px] overflow-hidden">
+        <div className="relative w-full h-[353px] md:h-[800px] overflow-hidden bg-[#383C8D] ">
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
+              className={`absolute inset-0 transition-opacity duration-1000 flex justify-end ${
                 index === currentSlide ? 'opacity-100' : 'opacity-100'
               }`}
             >
@@ -69,12 +69,12 @@ const HeroSlider = () => {
               <Image
                 src={slide.image}
                 alt={`Hero image ${index + 1} - desktop`}
-                layout="fill"
+                // layout="objectFit"
                 objectFit="cover"
-                className=" hidden md:block bg-[#1D2068]"
+                className="hidden md:block"
                 priority={index === 0}
-                objectPosition="top"
-                  // sizes="(max-width: 768px) 320px, 100vw"
+                objectPosition="right"
+                // sizes="(max-width: 768px) 320px, 100vw"
               />
 
               <div className="absolute inset-0 bg-[#1D2068] opacity-0"></div>

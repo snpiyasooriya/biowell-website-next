@@ -37,7 +37,7 @@ const Drdetails = () => {
   }, [slides.length]);
 
   return (
-    <section id="testomonials" className="py-8 md:py-16 z-10">
+    <section id="testomonials" className="pt-8 md:py-16 z-10">
       <div className="w-full md:bg-[#D0D4FF]">
         <div className="container mx-auto flex justify-center items-center relative">
           {/* Slider Section */}
