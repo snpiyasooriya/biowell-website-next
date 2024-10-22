@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi'; 
 import Image from 'next/image';
-import whtspplogo from '../public/img/contact_us.svg';
+import whtspplogo from '../public/img/whatsapplogo.svg';
 import logo from '../public/img/logo_white.svg';
 
 const Navbar = () => {
@@ -52,13 +52,13 @@ const Navbar = () => {
         </ul>
 
         {/* Contact Us with Icon */}
-        <div className="hidden md:flex items-center text-[#75FF83]">
+        <div className="hidden md:flex items-center font-extrabold text-[#75FF83]">
           <Image 
             src={whtspplogo} 
             alt="WhatsApp Logo" 
             className="mr-2"
             width={24} 
-            height={24} 
+            height={24}
           />
           <a href="/contact" className="hover:text-blue-300 text-[20px]">Contact Us</a>
         </div>
