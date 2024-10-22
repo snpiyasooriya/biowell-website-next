@@ -8,7 +8,6 @@ import heroImage3 from '../public/img/hero.png';
 import heroImage1Mobile from '../public/img/mobile/hero_mobile.png'; // Update with your actual mobile image paths
 import heroImage2Mobile from '../public/img/mobile/hero_mobile.png';
 import heroImage3Mobile from '../public/img/mobile/hero_mobile.png';
-import {clashDisplay} from "@/app/fonts";
 
 const HeroSlider = () => {
   const slides = [
