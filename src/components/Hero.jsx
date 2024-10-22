@@ -86,14 +86,14 @@ const HeroSlider = () => {
                 </h1>
 
                 {/* Desktop: display the whole title in a single line */}
-                <h1 className="hidden md:block text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left clash-display">
+                <h1 className="hidden md:block text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left font-clash-display">
                   {slide.title} {slide.title2} {slide.title3}
                 </h1>
 
 
                 <Link 
                   href="#learn-more" 
-                  className="hidden md:inline-block text-white border border-white py-2 px-4 rounded-md font-semibold text-[30px] w-[264px] h-[66px] hover:bg-white hover:text-[#1D2068] transition-colors duration-300 text-center leading-[58px]"
+                  className="hidden md:inline-block text-white border border-white  rounded-md font-semibold text-[30px] w-[264px] h-[66px] hover:bg-white hover:text-[#1D2068] text-center leading-[58px]"
                 >
                   Learn More
                 </Link>

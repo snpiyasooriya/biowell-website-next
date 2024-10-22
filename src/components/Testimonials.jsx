@@ -31,9 +31,9 @@ const Drdetails = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000);
+    }, 5000); 
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); 
   }, [slides.length]);
 
   return (
@@ -43,7 +43,7 @@ const Drdetails = () => {
           {/* Slider Section */}
           <div className="relative w-full max-w-full h-[500px] md:h-[500px] overflow-hidden m-4 md:m-0">
             {/* Mobile Image */}
-            <div className="absolute inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-center w-[288px] h-[435px] mx-auto">
+            <div className="absolute inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-center w-[288px] h-[435px]">
               <div className="relative w-[288px] h-[290px]">
                 <Image
                   src={slides[currentIndex].imageMobile}
@@ -114,8 +114,9 @@ const Drdetails = () => {
                 <span
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`cursor-pointer w-2 h-2 md:w-3 md:h-3 rounded-full transition-transform duration-300 ${index === currentIndex ? 'bg-blue-600 scale-110' : 'bg-gray-400 hover:bg-gray-600'
-                    }`}
+                  className={`cursor-pointer w-2 h-2 md:w-3 md:h-3 rounded-full transition-transform duration-300 ${
+                    index === currentIndex ? 'bg-blue-600 scale-110' : 'bg-gray-400 hover:bg-gray-600'
+                  }`}
                 />
               ))}
             </div>

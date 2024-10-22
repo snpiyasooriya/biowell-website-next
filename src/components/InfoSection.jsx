@@ -9,8 +9,12 @@ const InfoSection = () => {
       {/* First Box */}
       <div className="bg-white md:bg-[#B4BBFF] w-[288px] h-auto md:w-full md:h-full p-3 md:p-6 rounded-lg flex flex-col justify-between">
         <div className="text-center md:text-left">
-          <h2 className="text-[18px] md:text-[40px] font-normal md:font-bold text-[#050B7F]">Welcome</h2>
-          <h3 className="text-[18px] md:text-[30px] font-bold text-[#050B7F] mt-1 md:mt-2">to Biowell Pharmaceuticals</h3>
+        <h2 className="text-[18px] md:text-[40px] font-normal md:font-bold text-[#050B7F] leading-[1.5] md:leading-[1.2]">
+            Welcome
+          </h2>
+          <h3 className="text-[18px] md:text-[30px] font-bold text-[#050B7F] mt-1 md:mt-2 leading-[1.5] md:leading-[1.2]">
+            to Biowell Pharmaceuticals
+          </h3>
           <p className="text-black mt-2 md:mt-4 text-[11px] md:text-[20px] font-medium md:font-normal">
             We have been committed to improving global health through the development, 
             manufacturing, and distribution of high-quality pharmaceutical products.
