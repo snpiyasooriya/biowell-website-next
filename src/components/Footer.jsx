@@ -61,13 +61,13 @@ const Footer = () => {
           {/* Contact information */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact</h3>
-            <p className="text-white mb-4">Biowell,</p>
+            <p className="text-white mb-4">Bio well Pharmaceuticals (Pvt)Ltd,</p>
             <p className="text-white mb-4">
-              XXXXXXXXXXX,<br />
-              XXXXXXXXXXXXXXXXXXX,<br />
+              No: 76/A, Temple Road,<br />
+              Rukmale, Pannipitiya,<br />
               Sri Lanka.
             </p>
-            <p className="text-white mb-2">Tel: +94 710 000 000</p>
+            <p className="text-white mb-2">Tel: +94 077 444 3856</p>
             <p className="text-white mb-2">Email: contact@biowell.com</p>
           </div>
         </div>
