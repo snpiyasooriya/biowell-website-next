@@ -5,6 +5,7 @@ import KeyServices from "../components/KeyServices";
 import SliderDoctorDetails from "../components/Testimonials";
 import PharmaSection from "../components/PharmaSection .jsx";
 import Product from "../components/Product";
+import ContactUsForm from "@/components/ContactUs";
 export default function Home() {
   return (
    <div>
@@ -15,6 +16,7 @@ export default function Home() {
     <Product/>
     <SliderDoctorDetails/>
     <PharmaSection/>
+     <ContactUsForm/>
    </div>
   );
 }

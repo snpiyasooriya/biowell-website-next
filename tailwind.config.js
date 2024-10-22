@@ -16,6 +16,10 @@ module.exports = {
         keyservice: "#2B4F85",
         keyserviceletters: "#808080",
         button1: "#2DC283",
+        contactusgreen:"#2DC283"
+      },
+      fontFamily: {
+        clash_display:['var(--font-clash-display)'],
       },
     },
   },

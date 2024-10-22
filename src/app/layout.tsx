@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import titleIcon from "../public/img/title_icon.svg"
+import {clashDisplay} from "@/app/fonts";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -43,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}`}>
+      <body className={`${montserrat.className} ${clashDisplay.variable}`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
