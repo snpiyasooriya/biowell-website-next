@@ -78,13 +78,13 @@ const Drdetails = () => {
               alt={slides[currentIndex].title}
               layout="fill"
               objectFit="cover"
-              sizes="(max-width: 768px) 100vw, 768px"
+              objectPosition="top"
               className="absolute inset-0 hidden md:block"
             />
 
             {/* Desktop Text (Unchanged) */}
             <div className="absolute inset-0 flex flex-col justify-between p-4 md:p-8">
-              <div className="w-full md:w-2/3 text-center md:text-left text-white md:text-blue-900 hidden md:flex flex-col justify-end md:justify-start h-full md:h-auto">
+              <div className="w-full md:w-2/3 text-center md:text-left text-white md:text-blue-900 hidden md:flex flex-col justify-end md:justify-center  h-full md:h-auto">
                 <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-0">
                   High Standards and Reliable Results
                 </h2>
@@ -100,10 +100,10 @@ const Drdetails = () => {
 
               {/* Desktop Doctor's Details (Unchanged) */}
               <div className="hidden md:flex flex-col justify-center items-center text-center text-white mt-0 md:mt-16">
-                <h3 className="text-lg md:text-2xl lg:text-3xl font-semibold">
+                <h3 className="text-lg md:text-2xl lg:text-3xl font-semibold text-navcolor">
                   {slides[currentIndex].title}
                 </h3>
-                <p className="text-xs md:text-base lg:text-lg mt-1 md:mt-2">
+                <p className="text-xs md:text-base lg:text-lg mt-1 md:mt-2 text-[#656565]">
                   {slides[currentIndex].description}
                 </p>
               </div>
