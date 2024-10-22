@@ -43,24 +43,25 @@ const Drdetails = () => {
           {/* Slider Section */}
           <div className="relative w-full max-w-full h-[500px] md:h-[500px] overflow-hidden m-4 md:m-0 mx-auto">
             {/* Mobile Image */}
-            <div className="absolute inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-center w-[288px] h-[435px] mx-auto">
-              <div className="relative w-[288px] h-[290px]">
+            <div className="relative inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-start w-[288px] h-[435px] mx-auto">
+              <div className="w-[288px] h-[290px] absolute">
                 <Image
                   src={slides[currentIndex].imageMobile}
                   alt={slides[currentIndex].title}
                   layout="fill"
                   objectFit="cover"
+                  objectPosition="top"
                 />
               </div>
-              {/* Mobile Text Centered */}
-              <div className="text-center text-white p-2 flex-grow flex flex-col justify-center">
+               {/*Mobile Text Centered */}
+              <div className="text-center text-white p-2 flex-grow flex flex-col justify-end">
                 <h2 className="text-lg font-bold mb-2 leading-snug">
                   High Standards and Reliable Results
                 </h2>
                 <p className="text-xs leading-snug">
-                  &ldquo;As a practicing physician, I have had the opportunity to prescribe
-                  various products from &lsquo;Biowell&rsquo; to my patients. I am particularly
-                  impressed with their rigorous quality control measures and commitment to innovation.&rdquo;
+                  "As a practicing physician, I have had the opportunity to prescribe
+                  various products from 'Biowell' to my patients. I am particularly
+                  impressed with their rigorous quality control measures and commitment to innovation."
                 </p>
                 <h3 className="text-lg font-semibold mt-4">
                   {slides[currentIndex].title}
