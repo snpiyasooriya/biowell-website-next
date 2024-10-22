@@ -24,9 +24,9 @@ const ContactUsForm = () => {
 
     return (
         <section id="contact-us" className="py-16">
-            <div className="container mx-auto px-6">
-                <h2 className="text-3xl font-bold text-center mb-8 text-contactusgreen">Contact Us</h2>
-                <div className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <div className="max-w-[710px] mx-auto px-6">
+                <h2 className="text-3xl font-bold text-left mb-8 text-contactusgreen">Contact Us</h2>
+                <div className="relative mx-auto bg-white  rounded-lg">
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -73,7 +73,7 @@ const ContactUsForm = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-contactusgreen text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                            className="w-full bg-contactusgreen text-white py-2 px-4 rounded-md shadow-sm hover:bg-[#7980FF] font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         >
                             Send Message
                         </button>
