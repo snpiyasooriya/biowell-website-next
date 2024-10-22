@@ -31,9 +31,9 @@ const Drdetails = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); 
+    }, 5000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [slides.length]);
 
   return (
@@ -41,9 +41,9 @@ const Drdetails = () => {
       <div className="w-full md:bg-[#D0D4FF]">
         <div className="container mx-auto flex justify-center items-center relative">
           {/* Slider Section */}
-          <div className="relative w-full max-w-full h-[500px] md:h-[500px] overflow-hidden m-4 md:m-0">
+          <div className="relative w-full max-w-full h-[500px] md:h-[500px] overflow-hidden m-4 md:m-0 mx-auto">
             {/* Mobile Image */}
-            <div className="absolute inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-center w-[288px] h-[435px]">
+            <div className="absolute inset-0 bg-[#0053CC] md:hidden flex flex-col items-center justify-center w-[288px] h-[435px] mx-auto">
               <div className="relative w-[288px] h-[290px]">
                 <Image
                   src={slides[currentIndex].imageMobile}
@@ -109,14 +109,13 @@ const Drdetails = () => {
             </div>
 
             {/* Dots Navigation (Moved Here) */}
-            <div className="flex justify-center space-x-2 md:space-x-4 mt-2 md:mt-12 absolute bottom-4 left-1/2 transform -translate-x-1/2">
+            <div className="hidden md:flex justify-center space-x-2 md:space-x-4 mt-2 md:mt-12 absolute bottom-4 left-1/2 transform -translate-x-1/2">
               {slides.map((_, index) => (
                 <span
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`cursor-pointer w-2 h-2 md:w-3 md:h-3 rounded-full transition-transform duration-300 ${
-                    index === currentIndex ? 'bg-blue-600 scale-110' : 'bg-gray-400 hover:bg-gray-600'
-                  }`}
+                  className={`cursor-pointer w-2 h-2 md:w-3 md:h-3 rounded-full transition-transform duration-300 ${index === currentIndex ? 'bg-blue-600 scale-110' : 'bg-gray-400 hover:bg-gray-600'
+                    }`}
                 />
               ))}
             </div>
