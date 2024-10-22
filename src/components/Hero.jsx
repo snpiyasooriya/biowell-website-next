@@ -73,7 +73,8 @@ const HeroSlider = () => {
                 objectFit="cover"
                 className=" hidden md:block bg-[#1D2068]"
                 priority={index === 0}
-                sizes="(max-width: 768px) 320px, 100vw"
+                objectPosition="top"
+                  // sizes="(max-width: 768px) 320px, 100vw"
               />
 
               <div className="absolute inset-0 bg-[#1D2068] opacity-0"></div>
