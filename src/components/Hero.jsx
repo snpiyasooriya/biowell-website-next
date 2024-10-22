@@ -8,6 +8,7 @@ import heroImage3 from '../public/img/hero.png';
 import heroImage1Mobile from '../public/img/mobile/hero_mobile.png'; // Update with your actual mobile image paths
 import heroImage2Mobile from '../public/img/mobile/hero_mobile.png';
 import heroImage3Mobile from '../public/img/mobile/hero_mobile.png';
+import {clashDisplay} from "@/app/fonts";
 
 const HeroSlider = () => {
   const slides = [
@@ -87,14 +88,14 @@ const HeroSlider = () => {
                 </h1>
 
                 {/* Desktop: display the whole title in a single line */}
-                <h1 className="hidden md:block text-2xl md:text-5xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left font-clash-display">
+                <h1 className={`hidden md:block text-2xl md:text-5xl md:leading-[60px] ${clashDisplay.className} font-semibold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left`}>
                   {slide.title} {slide.title2} {slide.title3}
                 </h1>
 
 
                 <Link 
                   href="#learn-more" 
-                  className="hidden md:inline-block text-white border border-white  rounded-md font-semibold text-[30px] w-[264px] h-[66px] hover:bg-white hover:text-[#1D2068] text-center leading-[58px]"
+                  className={`hidden md:inline-block text-white border border-white  rounded-md font-semibold text-[30px] w-[264px] h-[66px] hover:bg-white hover:text-[#1D2068] text-center leading-[58px] ${clashDisplay.className}`}
                 >
                   Learn More
                 </Link>

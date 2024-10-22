@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+          clash_display:['var(--font-clash-display)'],
+          // sans: ["var(--font-sans)"],
+      },
     },
   },
   plugins: [],
