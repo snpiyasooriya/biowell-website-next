@@ -21,6 +21,9 @@ module.exports = {
       fontFamily: {
         clash_display:['var(--font-clash-display)'],
       },
+      backgroundImage: {
+        'custom-radial': 'radial-gradient(circle, #E1E3FF 25%, #D9DDFF 100%)',
+      },
     },
   },
   plugins: [],
