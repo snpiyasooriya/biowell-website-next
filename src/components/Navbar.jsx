@@ -70,7 +70,7 @@ const Navbar = () => {
 
               <div className="flex items-center text-[#75FF83] font-bold">
                 <Image src={whtspplogo} alt="WhatsApp Logo" width={24} height={24} className="mr-2"/>
-                <a href="/contact" className="hover:text-blue-300 transition-colors">Contact Us</a>
+                <a href="#contact-us" onClick={(e) => handleNavClick(e, '#contact-us')} className="hover:text-blue-300 transition-colors">Contact Us</a>
               </div>
             </div>
 
@@ -87,8 +87,8 @@ const Navbar = () => {
           {/* Mobile Menu */}
           <div className={`lg:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
             <ul className="flex flex-col space-y-4 pt-4 pb-6 text-white">
-              <li><a href="#science" onClick={(e) => handleNavClick(e, '#science')}
-                     className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Science</a></li>
+              <li><a href="#hero" onClick={(e) => handleNavClick(e, '#hero')}
+                     className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Home</a></li>
               <li><a href="#products" onClick={(e) => handleNavClick(e, '#products')}
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Products</a></li>
               <li><a href="#stories" onClick={(e) => handleNavClick(e, '#stories')}
@@ -97,7 +97,7 @@ const Navbar = () => {
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">About</a></li>
               <li className="flex justify-center items-center py-2">
                 <Image src={whtspplogo} alt="WhatsApp Logo" width={24} height={24} className="mr-2"/>
-                <a href="/contact" className="text-[#75FF83] hover:text-blue-300 transition-colors">Contact Us</a>
+                <a href="#contact-us" onClick={(e) => handleNavClick(e, '#contact-us')} className="text-[#75FF83] hover:text-blue-300 transition-colors">Contact Us</a>
               </li>
             </ul>
           </div>
