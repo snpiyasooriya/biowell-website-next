@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
 
         {/* Nav Links for larger screens (Hidden on mobile) */}
-        <ul className="hidden md:flex space-x-8 text-white text-[20px] font-bold leading-auto">
+        <ul className="hidden md:flex gap-24 text-white text-[20px] font-bold leading-auto">
           <li><a href="#science" onClick={(e) => handleNavClick(e, '#science')} className="hover:text-blue-300">Science</a></li>
           <li><a href="#products" onClick={(e) => handleNavClick(e, '#products')} className="hover:text-blue-300">Products</a></li>
           <li><a href="#testomonials" onClick={(e) => handleNavClick(e, '#testomonials')} className="hover:text-blue-300">Stories</a></li>
