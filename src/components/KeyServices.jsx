@@ -9,8 +9,8 @@ const KeyServices = () => {
     <section className="py-12 bg-white">
       <div className="container mx-auto text-center px-4">
         {/* Title */}
-        <h2 className="text-[20px] leading-[50px] text-[#0053CC] font-extrabold md:text-4xl md:text-navcolor mb-7">
-          <span className='font-montserrat'>Key Service</span>
+        <h2 className="text-[20px] leading-[50px] text-[#0053CC] md:text-navcolor font-extrabold md:text-4xl mb-7">
+          <span >KEY SERVICES</span>
         </h2>
 
         {/* Grid layout */}
@@ -36,8 +36,8 @@ const KeyServices = () => {
               </h3>
             </div>
             {/* Paragraph */}
-            <p className="text-sm sm:text-base text-left sm:text-center sm:w-full sm:leading-[1.75] text-keyserviceletters">
-              We provide comprehensive contract manufacturing services, from formulation to final product. Our facilities ensure the highest quality standards.
+            <p className="text-sm sm:text-base text-left sm:text-center sm:w-full leading-[18px] text-keyserviceletters font-medium">
+              We provide comprehensive contract manufacturing services, from formulation to final product. Our facilities are equipped with state-of-the-art technology, ensuring the highest standards of quality.
             </p>
           </div>
 
@@ -56,12 +56,13 @@ const KeyServices = () => {
                 />
               </div>
               {/* Heading */}
-              <h3 className="text-[16px] sm:text-[20px] font-bold text-[#0053CC] sm:text-keyservice text-left sm:text-center mb-0">
-                Trading Services
+              <h3 className="text-[16px] sm:text-[20px] font-bold text-[#0053CC] sm:text-keyservice text-left sm:text-center mb-0 ">
+                Trading <br/>
+                Services
               </h3>
             </div>
             {/* Paragraph */}
-            <p className="text-sm sm:text-base text-left sm:text-center sm:w-full sm:leading-[1.75] text-keyserviceletters">
+            <p className="text-sm sm:text-base text-left sm:text-center leading-[18px] sm:w-full sm:leading-[1.75] text-keyserviceletters font-medium">
               We provide comprehensive trading services, ensuring the delivery of high-quality products globally. We maintain excellence across all levels of service.
             </p>
           </div>
@@ -86,7 +87,7 @@ const KeyServices = () => {
               </h3>
             </div>
             {/* Paragraph */}
-            <p className="text-sm sm:text-base text-left sm:text-center sm:w-full sm:leading-[1.75] text-keyserviceletters">
+            <p className="text-sm sm:text-base text-left sm:text-center leading-[18px] sm:w-full sm:leading-[1.75] text-keyserviceletters font-medium">
               Our R&D team is at the forefront of pharmaceutical innovation, developing new treatments and improving formulations to meet evolving healthcare needs.
             </p>
           </div>

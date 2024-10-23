@@ -51,7 +51,7 @@ const HeroSlider = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 flex justify-end ${
+              className={`absolute inset-0 transition-opacity duration-1000 flex justify-center md:justify-end ${
                 index === currentSlide ? 'opacity-100' : 'opacity-100'
               }`}
             >
@@ -61,7 +61,7 @@ const HeroSlider = () => {
                 alt={`Hero image ${index + 1} - mobile`}
                 layout="fill"
                 objectFit="cover"
-                className="opacity-100 md:hidden bg-[#0053CC]"
+                className="opacity-100 md:hidden bg-[#1D2068]"
                 priority={index === 0}
                 sizes="(max-width: 768px) 320px, 100vw"
               />
@@ -69,19 +69,17 @@ const HeroSlider = () => {
               <Image
                 src={slide.image}
                 alt={`Hero image ${index + 1} - desktop`}
-                // layout="objectFit"
                 objectFit="cover"
                 className="hidden md:block"
                 priority={index === 0}
                 objectPosition="right"
-                // sizes="(max-width: 768px) 320px, 100vw"
               />
 
               <div className="absolute inset-0 bg-[#1D2068] opacity-0"></div>
-              <div className="absolute inset-0 flex flex-col justify-end md:justify-center px-4 md:px-16 max-w-7xl mx-auto pb-8 md:pb-0">
+              <div className="absolute inset-0 flex flex-col justify-end md:justify-center px-4 md:px-16 max-w-7xl mx-auto md:pb-0">
                {/* Mobile: display each title part in separate lines */}
                 <h1 className="text-2xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left md:hidden">
-                  <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title}</span>  
+                  <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title}</span>
                   <span className="block text-[18px] font-medium leading-[22px] text-center">{slide.title2}</span>
                   <span className="block text-[25px] leading-[20px] text-center">{slide.title3}</span>
                 </h1>
