@@ -5,7 +5,7 @@ import pill from '../public/img/opened_capsule.png';
 
 const InfoSection = () => {
   return (
-    <div className="max-w-[320px] md:max-w-[1196px] w-full mx-auto  flex flex-col md:grid md:grid-cols-2 gap-2 md:gap-5 md:mt-5  mb-8 md:mb-16">
+    <div className="max-w-[320px] md:max-w-[1196px] w-full mx-auto  flex flex-col md:grid md:grid-cols-2 gap-2 md:gap-5 md:mt-5  md:mb-16">
       {/* First Box */}
       <div className="bg-white md:bg-[#B4BBFF] w-[288px] mx-auto h-auto md:w-full md:h-full pt-4 md:p-6 rounded-lg flex flex-col justify-between">
         <div className="text-center md:text-left">
