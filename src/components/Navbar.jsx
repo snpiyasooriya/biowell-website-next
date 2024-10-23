@@ -91,7 +91,7 @@ const Navbar = () => {
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Home</a></li>
               <li><a href="#products" onClick={(e) => handleNavClick(e, '#products')}
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Products</a></li>
-              <li><a href="#stories" onClick={(e) => handleNavClick(e, '#stories')}
+              <li><a href="#testomonials" onClick={(e) => handleNavClick(e, '#testomonials')}
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Stories</a></li>
               <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">About</a></li>
