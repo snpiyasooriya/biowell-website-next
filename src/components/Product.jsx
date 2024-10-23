@@ -81,7 +81,7 @@ const Product = () => {
           <h2 className="text-[20px] font-bold text-navcolor leading-[25px] sm:text-[40px] sm:leading-[50px] lg:text-[40px] lg:leading-[50px]">
             WHAT WE PRODUCE
           </h2>
-          <p className="text-[14px] leading-[20px] sm:text-[20px] sm:leading-[30px] mt-2 sm:mt-3 lg:text-[20px] lg:leading-[30px]">
+          <p className="text-[14px] md:text-[#414141] leading-[20px] sm:text-[20px] sm:leading-[30px] mt-2 sm:mt-3 lg:text-[20px] lg:leading-[30px]">
             Discover our premium range of cosmetic products, meticulously crafted for our esteemed clients.
             We take pride in manufacturing high-quality cosmetics that meet the most rigorous standards of safety and effectiveness.
           </p>
