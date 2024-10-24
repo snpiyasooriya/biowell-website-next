@@ -78,21 +78,14 @@ const HeroSlider = () => {
                   <div className="absolute inset-0 bg-[#1D2068] opacity-0"></div>
                   <div className="absolute inset-0 flex flex-col justify-end md:justify-center px-4 md:px-16 max-w-7xl mx-auto md:pb-0">
                     <h1 className="text-2xl font-bold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left md:hidden">
-                      <span className="block text-[18px] font-medium leading-[28px] text-center mb-2">{slide.title}</span>
-                      <span className="block text-[18px] font-medium leading-[28px] text-center mb-2">{slide.title2}</span>
+                      <span className="block text-[18px] font-medium leading-[23px] text-center">{slide.title}</span>
+                      <span className="block text-[18px] font-medium leading-[23px] text-center">{slide.title2}</span>
                       <span className="block text-[25px] leading-[30px] text-center">{slide.title3}</span>
                     </h1>
 
                     <h1 className={`hidden md:block text-2xl md:text-4xl lg:text-5xl md:leading-[1.2] font-clash_display font-semibold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left drop-shadow-[0_0px_2px_rgba(0,0,0,0.3)]`}>
                       {slide.title} {slide.title2} {slide.title3}
                     </h1>
-
-                    <Link
-                        href="#learn-more"
-                        className="md:hidden block mx-auto text-white border border-white rounded-md font-medium text-[18px] px-6 py-2 hover:bg-white hover:text-[#1D2068] text-center mb-8 font-clash_display"
-                    >
-                      Learn More
-                    </Link>
 
                     <Link
                         href="#learn-more"
