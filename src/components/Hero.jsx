@@ -83,7 +83,7 @@ const HeroSlider = () => {
                       <span className="block text-[25px] leading-[30px] text-center">{slide.title3}</span>
                     </h1>
 
-                    <h1 className={`hidden md:block text-2xl md:text-4xl lg:text-5xl md:leading-[1.2] font-clash_display font-semibold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left`}>
+                    <h1 className={`hidden md:block text-2xl md:text-4xl lg:text-5xl md:leading-[1.2] font-clash_display font-semibold mb-4 max-w-2xl transition-colors duration-300 p-2 text-left drop-shadow-[0_0px_2px_rgba(0,0,0,0.3)]`}>
                       {slide.title} {slide.title2} {slide.title3}
                     </h1>
 
