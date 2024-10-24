@@ -64,7 +64,7 @@ const Navbar = () => {
                        className="hover:text-blue-300 transition-colors">Products</a></li>
                 <li><a href="#testomonials" onClick={(e) => handleNavClick(e, '#testomonials')}
                        className="hover:text-blue-300 transition-colors">Stories</a></li>
-                <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}
+                <li><a href="#footer" onClick={(e) => handleNavClick(e, '#footer')}
                        className="hover:text-blue-300 transition-colors">About</a></li>
               </ul>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Products</a></li>
               <li><a href="#testomonials" onClick={(e) => handleNavClick(e, '#testomonials')}
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">Stories</a></li>
-              <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}
+              <li><a href="#footer" onClick={(e) => handleNavClick(e, '#footer')}
                      className="block py-2 text-center hover:bg-[#1a1f8f] transition-colors">About</a></li>
               <li className="flex justify-center items-center py-2">
                 <Image src={whtspplogo} alt="WhatsApp Logo" width={24} height={24} className="mr-2"/>

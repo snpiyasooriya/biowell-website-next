@@ -4,7 +4,7 @@ import logo from '../public/img/logo_white.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3E3E3E] md:bg-[#050b7f] text-white pt-[50px] mt-16">
+    <footer id="footer" className="bg-[#3E3E3E] md:bg-[#050b7f] text-white pt-[50px] mt-16">
       <div className="container mx-auto px-6">
         {/* Mobile view (320px) */}
         <div className="md:hidden flex flex-col items-center bg-[#3E3E3E]">
