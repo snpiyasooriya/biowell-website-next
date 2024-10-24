@@ -4,7 +4,7 @@ import logo from '../public/img/logo_white.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3E3E3E] md:bg-[#050b7f] text-white py-12 mt-16">
+    <footer className="bg-[#3E3E3E] md:bg-[#050b7f] text-white pt-[50px] mt-16">
       <div className="container mx-auto px-6">
         {/* Mobile view (320px) */}
         <div className="md:hidden flex flex-col items-center bg-[#3E3E3E]">
@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom copyright */}
-      <div className="hidden md:block mt-8 border-t border-white pt-4 text-center text-white text-sm">
+      <div className="hidden md:block pt-6 pb-[15px] mt-[45px] border-t border-white text-center text-white text-sm">
         © 2024 Biowell. All rights reserved.
       </div>
     </footer>
