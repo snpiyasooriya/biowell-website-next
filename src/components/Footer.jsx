@@ -74,8 +74,9 @@ const Footer = () => {
       </div>
 
       {/* Bottom copyright */}
-      <div className="hidden md:block pt-6 pb-[15px] mt-[45px] border-t border-white text-center text-white text-sm">
-        © 2024 Biowell. All rights reserved.
+      <div className="hidden mx-auto md:block  py-[15px] mt-[45px] border-t border-white text-center text- text-sm">
+        © 2024 Bio well. All rights reserved.<br/>
+        <span className="text-[#fffca5]">Developed by Ratko Co.</span>
       </div>
     </footer>
   );
